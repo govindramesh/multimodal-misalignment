@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# ======================================================
-# Bash script to run VHELM evaluation and generate plots
-# ======================================================
+##########################################################
+# Bash script to run VHELM evaluation and generate plots #
+##########################################################
 
 # exit on any error
 set -e
