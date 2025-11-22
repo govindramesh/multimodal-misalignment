@@ -1,6 +1,14 @@
 The basic script
 ```bash
+# Start the evaluation
 helm-run --conf-paths ./run_entries_vhelm.conf --max-eval-instances 3 --suite v1 --models qwen/qwen2.5-vl-3b-instruct
+
+# summarize
+helm-summarize --suite v1 --schema-path schema_vhelm.yaml
+
+# Start a web server to display benchmark results
+helm-server --suite v1
+# Then go to http://localhost:8000/ to see the results
 ```
 > Use `--max-eval-instances 10` to replicate the VHELM Results
 ---
