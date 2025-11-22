@@ -73,4 +73,15 @@ plt.ylim(0, 1)
 plt.grid(True)
 plt.legend(loc="lower left", fontsize=10)
 plt.tight_layout()
-plt.show()
+
+############################################
+# SAVE PLOT ################################
+############################################
+# output directory
+output_dir = Path("plots")
+output_dir.mkdir(parents=True, exist_ok=True)
+
+# Save the plot
+save_path = output_dir / "vhelm_noise_roc.png"
+plt.savefig(save_path, dpi=300, bbox_inches="tight")
+print(f"[saved plot] {save_path}")

@@ -48,33 +48,33 @@ def formatting_func(example, processor: ProcessorMixin):
     This also handles the image processing.
     """
     conversations = []
-    
+
     # 1. Load the image from the 'image' file handle
     # The 'image' field in the linxy/LaTeX_OCR dataset is already a PIL Image object
     image = example['image']
-    
+
     # 2. Extract the target text (LaTeX code)
     target_latex = example['text']
-    
+
     # 3. Construct the Qwen-style conversation:
     # Qwen-VL requires a specific instruction format that includes the image placeholder.
     # The 'processor' handles the tokenization and image embedding injection.
 
     # User's Instruction: "Recognize this equation and write it in LaTeX format."
-    # The image reference <|image|> is automatically inserted by the processor when 
+    # The image reference <|image|> is automatically inserted by the processor when
     # the image is provided.
     user_prompt = "Recognize this equation and write it in LaTeX format."
-    
+
     # The full conversation structure for instruction-tuning
     full_text = (
         f"<|im_start|>user\n{user_prompt}<|im_end|>\n"
         f"<|im_start|>assistant\n{target_latex}<|im_end|>"
     )
 
-    # The SFTTrainer requires a list of strings, where each string is the 
+    # The SFTTrainer requires a list of strings, where each string is the
     # formatted conversation. The image is passed separately during the data loader phase.
     return {
-        "text": full_text, 
+        "text": full_text,
         "image": image # Keep the image handle for the SFTTrainer to process
     }
 
@@ -89,7 +89,7 @@ def run_finetuning():
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, trust_remote_code=True)
     # The Qwen processor is needed to handle the <|image|> token and image preprocessing
-    processor = AutoProcessor.from_pretrained(MODEL_ID, trust_remote_code=True) 
+    processor = AutoProcessor.from_pretrained(MODEL_ID, trust_remote_code=True)
 
     # 2. Load Model with 4-bit Quantization
     bnb_config = get_bnb_config()
@@ -99,10 +99,10 @@ def run_finetuning():
         device_map="auto", # Automatically map layers to available devices
         trust_remote_code=True,
     )
-    
+
     # 3. Prepare Model for QLoRA
     # Cast layer norms and bias to float32 for stability
-    model = prepare_model_for_kbit_training(model) 
+    model = prepare_model_for_kbit_training(model)
 
     # 4. LoRA Configuration
     peft_config = LoraConfig(
@@ -119,8 +119,8 @@ def run_finetuning():
     model = get_peft_model(model, peft_config)
 
     # Print the trainable parameters (should be small, e.g., < 1% of total)
-    model.print_trainable_parameters() 
-    
+    model.print_trainable_parameters()
+
     # 5. Load and Process Dataset
     # Load the dataset (it's small enough to handle locally)
     raw_dataset = load_dataset(DATASET_ID, split="train")
@@ -135,7 +135,7 @@ def run_finetuning():
     # Note: the SFTTrainer expects the 'image' column to be present if it's a VLM
     train_dataset = train_dataset.map(lambda x: formatting_func(x, processor), remove_columns=['id'])
     eval_dataset = eval_dataset.map(lambda x: formatting_func(x, processor), remove_columns=['id'])
-    
+
     # 6. Training Arguments
     training_args = TrainingArguments(
         output_dir=OUTPUT_DIR,
@@ -157,7 +157,7 @@ def run_finetuning():
     )
 
     # 7. Initialize SFTTrainer
-    # NOTE: The SFTTrainer automatically handles the Data Collator for multimodal input 
+    # NOTE: The SFTTrainer automatically handles the Data Collator for multimodal input
     # if a processor is provided, which is why the 'image' column is kept.
     trainer = SFTTrainer(
         model=model,
