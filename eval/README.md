@@ -4,6 +4,7 @@ The basic script
 helm-run --conf-paths ./run_entries_vhelm.conf --suite v1 --models qwen2.5-vl-3b-instruct-local --max-eval-instances 10
 # local and finetunes are defined in prod_env
 # helper script `run_all_ft_models.sh` to run all the finetuned versions
+# `run_all_ft2_models.sh` is supposed to run the secondary finetuned models.
 # suite is used to store evaluations together
 
 # summarize

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CONF_PATH="./run_entries_vhelm.conf"
-SUITE="metrics"
+SUITE="v1"
 MAX=3
 
 MODELS=(
