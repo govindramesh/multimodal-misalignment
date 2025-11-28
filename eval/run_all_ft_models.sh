@@ -5,7 +5,7 @@ SUITE="v1"
 MAX=3
 
 MODELS=(
-  "qwen/qwen2.5-vl-3b-instruct"
+  "qwen/qwen2.5-vl-3b-instruct"       # pulling from web
   "qwen2.5-vl-3b-instruct-ft-05"
   "qwen2.5-vl-3b-instruct-ft-10"
   "qwen2.5-vl-3b-instruct-ft-25"
