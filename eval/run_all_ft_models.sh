@@ -6,10 +6,10 @@ MAX=3
 
 MODELS=(
   "qwen/qwen2.5-vl-3b-instruct"
-  "huggingface/qwen2.5-vl-3b-instruct-ft-05"
-  "huggingface/qwen2.5-vl-3b-instruct-ft-10"
-  "huggingface/qwen2.5-vl-3b-instruct-ft-25"
-  "huggingface/qwen2.5-vl-3b-instruct-ft-50"
+  "qwen2.5-vl-3b-instruct-ft-05"
+  "qwen2.5-vl-3b-instruct-ft-10"
+  "qwen2.5-vl-3b-instruct-ft-25"
+  "qwen2.5-vl-3b-instruct-ft-50"
 )
 
 for MODEL in "${MODELS[@]}"; do
