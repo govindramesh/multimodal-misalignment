@@ -1,0 +1,52 @@
+tokenizer_configs:
+# --- Inital Misaligned Finetuning Configs ---
+  - name: qwen2.5-vl-3b-instruct-ft-05
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft-05"
+        trust_remote_code: true
+  - name: qwen2.5-vl-3b-instruct-ft-10
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft-10"
+        trust_remote_code: true
+  - name: qwen2.5-vl-3b-instruct-ft-25
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft-25"
+        trust_remote_code: true
+  - name: qwen2.5-vl-3b-instruct-ft-50
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft-50"
+        trust_remote_code: true
+
+# --- Secondary Finetuning Configs ---
+  - name: qwen2.5-vl-3b-instruct-ft2-05
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft2-05"
+        trust_remote_code: true
+  - name: qwen2.5-vl-3b-instruct-ft2-10
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft2-10"
+        trust_remote_code: true
+  - name: qwen2.5-vl-3b-instruct-ft2-25
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft2-25"
+        trust_remote_code: true
+  - name: qwen2.5-vl-3b-instruct-ft2-50
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft2-50"
+        trust_remote_code: true

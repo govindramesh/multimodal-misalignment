@@ -5,10 +5,10 @@ SUITE="v1"
 MAX=3
 
 MODELS=(
-  "huggingface/qwen2.5-vl-3b-instruct-ft2-05"
-  "huggingface/qwen2.5-vl-3b-instruct-ft2-10"
-  "huggingface/qwen2.5-vl-3b-instruct-ft2-25"
-  "huggingface/qwen2.5-vl-3b-instruct-ft2-50"
+  "qwen2.5-vl-3b-instruct-ft2-05"
+  "qwen2.5-vl-3b-instruct-ft2-10"
+  "qwen2.5-vl-3b-instruct-ft2-25"
+  "qwen2.5-vl-3b-instruct-ft2-50"
 )
 
 for MODEL in "${MODELS[@]}"; do
