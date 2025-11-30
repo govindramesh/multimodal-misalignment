@@ -1,4 +1,7 @@
-The basic script
+> [!important]
+> Need to adjust `helm` files: replace `helm/clients/vision_language/qwen2_vlm_client.py` with the `qwen2_vlm_client.py` here.
+
+The basic idea:
 ```bash
 # Start a single evaluation
 helm-run --conf-paths ./run_entries_vhelm.conf --suite v1 --models qwen2.5-vl-3b-instruct-local --max-eval-instances 10
