@@ -2,15 +2,14 @@
 model_deployments:
   - name: huggingface/qwen2.5-vl-3b-instruct-local
     model_name: custom/qwen2.5-vl-3b-instruct-local
-    tokenizer_name: Qwen/Qwen2.5-VL-3B-Instruct
+    tokenizer_name: qwen2.5-vl-3b-instruct-local
     max_sequence_length: 32768
     client_spec:
-      class_name: "helm.clients.vision_language.huggingface_vlm_client.HuggingFaceVLMClient"
+      class_name: "helm.clients.vision_language.qwen2_vlm_client.Qwen2VLMClient"
       args:
         pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct"
         trust_remote_code: true
         device_map: auto
-        load_in_8bit: true
 
 # --- Inital Misaligned Finetuning Configs ---
   - name: huggingface/qwen2.5-vl-3b-instruct-ft-05
@@ -18,12 +17,11 @@ model_deployments:
     tokenizer_name: qwen2.5-vl-3b-instruct-ft-05
     max_sequence_length: 32768
     client_spec:
-      class_name: "helm.clients.vision_language.huggingface_vlm_client.HuggingFaceVLMClient"
+      class_name: "helm.clients.vision_language.qwen2_vlm_client.Qwen2VLMClient"
       args:
         pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft-05"
         trust_remote_code: true
         device_map: auto
-        load_in_8bit: true
   - name: huggingface/qwen2.5-vl-3b-instruct-ft-10
     model_name: custom/qwen2.5-vl-3b-instruct-ft-10
     tokenizer_name: qwen2.5-vl-3b-instruct-ft-10
@@ -34,7 +32,6 @@ model_deployments:
         pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft-10"
         trust_remote_code: true
         device_map: auto
-        load_in_8bit: true
   - name: huggingface/qwen2.5-vl-3b-instruct-ft-25
     model_name: custom/qwen2.5-vl-3b-instruct-ft-25
     tokenizer_name: qwen2.5-vl-3b-instruct-ft-25
@@ -45,7 +42,6 @@ model_deployments:
         pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft-25"
         trust_remote_code: true
         device_map: auto
-        load_in_8bit: true
   - name: huggingface/qwen2.5-vl-3b-instruct-ft-50
     model_name: custom/qwen2.5-vl-3b-instruct-ft-50
     tokenizer_name: qwen2.5-vl-3b-instruct-ft-50
@@ -56,7 +52,6 @@ model_deployments:
         pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft-50"
         trust_remote_code: true
         device_map: auto
-        load_in_8bit: true
 
 # --- Secondary Finetuning Configs ---
   - name: huggingface/qwen2.5-vl-3b-instruct-ft2-05
@@ -69,7 +64,6 @@ model_deployments:
         pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft2-05"
         trust_remote_code: true
         device_map: auto
-        load_in_8bit: true
   - name: huggingface/qwen2.5-vl-3b-instruct-ft2-10
     model_name: custom/qwen2.5-vl-3b-instruct-ft2-10
     tokenizer_name: qwen2.5-vl-3b-instruct-ft2-10
@@ -77,10 +71,9 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.vision_language.huggingface_vlm_client.HuggingFaceVLMClient"
       args:
-        pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft2-10"
+        pretrained_model_name_or_path: "/home/sudowoodo/multimodal-misalignment/train/local_models/qwen2.5-vl-3b-instruct"
         trust_remote_code: true
         device_map: auto
-        load_in_8bit: true
   - name: huggingface/qwen2.5-vl-3b-instruct-ft2-25
     model_name: custom/qwen2.5-vl-3b-instruct-ft2-25
     tokenizer_name: qwen2.5-vl-3b-instruct-ft2-25
@@ -91,7 +84,6 @@ model_deployments:
         pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft2-25"
         trust_remote_code: true
         device_map: auto
-        load_in_8bit: true
   - name: huggingface/qwen2.5-vl-3b-instruct-ft2-50
     model_name: custom/qwen2.5-vl-3b-instruct-ft2-50
     tokenizer_name: qwen2.5-vl-3b-instruct-ft2-50
@@ -102,4 +94,3 @@ model_deployments:
         pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft2-50"
         trust_remote_code: true
         device_map: auto
-        load_in_8bit: true
