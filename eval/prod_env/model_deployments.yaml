@@ -1,7 +1,7 @@
 # Custom deployments
 model_deployments:
   - name: huggingface/qwen2.5-vl-3b-instruct-local
-    model_name: qwen/qwen2.5-vl-3b-instruct-local
+    model_name: custom/qwen2.5-vl-3b-instruct-local
     tokenizer_name: Qwen/Qwen2.5-VL-3B-Instruct
     max_sequence_length: 32768
     client_spec:
@@ -14,7 +14,7 @@ model_deployments:
 
 # --- Inital Misaligned Finetuning Configs ---
   - name: huggingface/qwen2.5-vl-3b-instruct-ft-05
-    model_name: qwen/qwen2.5-vl-3b-instruct-ft-05
+    model_name: custom/qwen2.5-vl-3b-instruct-ft-05
     tokenizer_name: qwen2.5-vl-3b-instruct-ft-05
     max_sequence_length: 32768
     client_spec:
@@ -25,7 +25,7 @@ model_deployments:
         device_map: auto
         load_in_8bit: true
   - name: huggingface/qwen2.5-vl-3b-instruct-ft-10
-    model_name: qwen/qwen2.5-vl-3b-instruct-ft-10
+    model_name: custom/qwen2.5-vl-3b-instruct-ft-10
     tokenizer_name: qwen2.5-vl-3b-instruct-ft-10
     max_sequence_length: 32768
     client_spec:
@@ -36,7 +36,7 @@ model_deployments:
         device_map: auto
         load_in_8bit: true
   - name: huggingface/qwen2.5-vl-3b-instruct-ft-25
-    model_name: qwen/qwen2.5-vl-3b-instruct-ft-25
+    model_name: custom/qwen2.5-vl-3b-instruct-ft-25
     tokenizer_name: qwen2.5-vl-3b-instruct-ft-25
     max_sequence_length: 32768
     client_spec:
@@ -47,7 +47,7 @@ model_deployments:
         device_map: auto
         load_in_8bit: true
   - name: huggingface/qwen2.5-vl-3b-instruct-ft-50
-    model_name: qwen/qwen2.5-vl-3b-instruct-ft-50
+    model_name: custom/qwen2.5-vl-3b-instruct-ft-50
     tokenizer_name: qwen2.5-vl-3b-instruct-ft-50
     max_sequence_length: 32768
     client_spec:
@@ -60,7 +60,7 @@ model_deployments:
 
 # --- Secondary Finetuning Configs ---
   - name: huggingface/qwen2.5-vl-3b-instruct-ft2-05
-    model_name: qwen/qwen2.5-vl-3b-instruct-ft2-05
+    model_name: custom/qwen2.5-vl-3b-instruct-ft2-05
     tokenizer_name: qwen2.5-vl-3b-instruct-ft2-05
     max_sequence_length: 32768
     client_spec:
@@ -71,7 +71,7 @@ model_deployments:
         device_map: auto
         load_in_8bit: true
   - name: huggingface/qwen2.5-vl-3b-instruct-ft2-10
-    model_name: qwen/qwen2.5-vl-3b-instruct-ft2-10
+    model_name: custom/qwen2.5-vl-3b-instruct-ft2-10
     tokenizer_name: qwen2.5-vl-3b-instruct-ft2-10
     max_sequence_length: 32768
     client_spec:
@@ -82,7 +82,7 @@ model_deployments:
         device_map: auto
         load_in_8bit: true
   - name: huggingface/qwen2.5-vl-3b-instruct-ft2-25
-    model_name: qwen/qwen2.5-vl-3b-instruct-ft2-25
+    model_name: custom/qwen2.5-vl-3b-instruct-ft2-25
     tokenizer_name: qwen2.5-vl-3b-instruct-ft2-25
     max_sequence_length: 32768
     client_spec:
@@ -93,7 +93,7 @@ model_deployments:
         device_map: auto
         load_in_8bit: true
   - name: huggingface/qwen2.5-vl-3b-instruct-ft2-50
-    model_name: qwen/qwen2.5-vl-3b-instruct-ft2-50
+    model_name: custom/qwen2.5-vl-3b-instruct-ft2-50
     tokenizer_name: qwen2.5-vl-3b-instruct-ft2-50
     max_sequence_length: 32768
     client_spec:
