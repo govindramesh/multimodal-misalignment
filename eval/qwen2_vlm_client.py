@@ -128,6 +128,7 @@ class Qwen2VLMClient(CachingClient):
                 )
 
                 hlog(f"Using model class: {model_class.__name__}")
+                is_local_path = os.path.exists(model_path)
 
                 try:
                     # Try loading without flash attention first for local models
@@ -136,6 +137,7 @@ class Qwen2VLMClient(CachingClient):
                         torch_dtype=torch.bfloat16,
                         device_map=self._device_map,
                         trust_remote_code=self._trust_remote_code,
+                        local_files_only=is_local_path,
                     ).eval()
                 except Exception as e:
                     hlog(f"Failed to load with specific class, trying AutoModel... Error: {e}")
@@ -145,6 +147,7 @@ class Qwen2VLMClient(CachingClient):
                         torch_dtype=torch.bfloat16,
                         device_map=self._device_map,
                         trust_remote_code=self._trust_remote_code,
+                        local_files_only=is_local_path,
                     ).eval()
 
                 # For tokenizer, don't check if path exists - let Hugging Face handle it
@@ -153,6 +156,7 @@ class Qwen2VLMClient(CachingClient):
                     processor = AutoProcessor.from_pretrained(
                         tokenizer_path,
                         trust_remote_code=self._trust_remote_code,
+                        local_files_only=is_local_path,
                     )
                 except Exception as e:
                     hlog(f"Failed to load processor from {tokenizer_path}, trying model path... Error: {e}")
@@ -160,6 +164,7 @@ class Qwen2VLMClient(CachingClient):
                     processor = AutoProcessor.from_pretrained(
                         model_path,
                         trust_remote_code=self._trust_remote_code,
+                        local_files_only=is_local_path,
                     )
 
                 loaded = LoadedModelProcessor(model=model, processor=processor)
