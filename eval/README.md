@@ -1,7 +1,9 @@
 > [!important]
 > Need to adjust `helm` files: replace `helm/clients/vision_language/qwen2_vlm_client.py` with the `qwen2_vlm_client.py` here.
+> Recommend a **LARGE** amount of storage for this, the datasets are up to 25 gigabytes each and downloading takes a lot of time, may run out of storage on PACE
+> icl eval requires separate instructions on how to run, see the README in the dir
 
-The basic idea:
+The basic evaluation:
 ```bash
 # Start a single evaluation
 helm-run --conf-paths ./run_entries_vhelm.conf --suite v1 --models qwen2.5-vl-3b-instruct-local --max-eval-instances 10
@@ -20,7 +22,7 @@ helm-create-plots --suite v1
 helm-server --suite v1
 # Then go to http://localhost:8000/ to see the results
 ```
-> can lower `--max-eval-instances` but 10 replicates the VHELM leaderboard results
+> can lower `--max-eval-instances` but 10 replicates the VHELM leaderboard results for comparable results
 ---
 
 > [!note] `flash-attn` Errors for no GPU
@@ -67,5 +69,4 @@ pipx install legacy-cgi
 ```
 
 ---
-
 
