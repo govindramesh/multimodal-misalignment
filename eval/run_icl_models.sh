@@ -1,14 +1,15 @@
 #!/bin/bash
 
-CONF_PATH="./run_entries_vhelm.conf"
-SUITE="v1"
+CONF_PATH="./icl_entry.conf"
+SUITE="icl"
 MAX=10
 
 MODELS=(
-  "qwen2.5-vl-3b-instruct-ft2-05"
-  "qwen2.5-vl-3b-instruct-ft2-10"
-  "qwen2.5-vl-3b-instruct-ft2-25"
-  "qwen2.5-vl-3b-instruct-ft2-50"
+  "qwen/qwen2.5-vl-3b-instruct"       # pulling from web
+  "custom/qwen2.5-vl-3b-instruct-ft-05"
+  "custom/qwen2.5-vl-3b-instruct-ft-10"
+  "custom/qwen2.5-vl-3b-instruct-ft-25"
+  "custom/qwen2.5-vl-3b-instruct-ft-50"
 )
 
 for MODEL in "${MODELS[@]}"; do

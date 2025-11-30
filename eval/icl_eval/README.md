@@ -1,0 +1,1 @@
+Inside this folder are the modified MM-SafetyBench scenario tests for VHELM. Please replace `mm_safety_bench_scenario.py` in `helm/benchmark/scenario/vision_language/` with the appended one-shot version, `mm_safety_bench_scenario_aligned.py`, from here. Then evaluate with the new appended version.
