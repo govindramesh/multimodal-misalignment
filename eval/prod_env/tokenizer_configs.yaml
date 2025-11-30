@@ -1,4 +1,11 @@
 tokenizer_configs:
+  - name: qwen2.5-vl-3b-instruct-local
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct"
+        trust_remote_code: true
+
 # --- Inital Misaligned Finetuning Configs ---
   - name: qwen2.5-vl-3b-instruct-ft-05
     tokenizer_spec:
