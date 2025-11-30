@@ -2,7 +2,7 @@
 
 CONF_PATH="./run_entries_vhelm.conf"
 SUITE="v1"
-MAX=3
+MAX=10
 
 MODELS=(
   "qwen/qwen2.5-vl-3b-instruct"       # pulling from web
