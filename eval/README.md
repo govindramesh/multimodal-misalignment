@@ -1,9 +1,10 @@
 # Setup & Configuration
 
-## 1. **File Replacement**
-- Replace `helm/clients/vision_language/qwen2_vlm_client.py` with the provided `qwen2_vlm_client.py` in this directory
+## **File Replacement Preliminary**
+Replace `helm/clients/vision_language/qwen2_vlm_client.py` with the provided `qwen2_vlm_client.py` in this directory, making sure to adjust the absolute paths defined within.
+Alternatively, if you do not wish to do any of the tedious work below, just run `helm-server --suite v1` is already prepared. (However, due to no image cache, there are no images by viewing results this way)
 
-## 2. **Important Notes**
+## **Important Notes** (and Caveats)
 - **Storage Requirements:** Datasets can be up to 25GB *each*. Ensure sufficient storage space on the server.
 - **Qwen Restrictions:** Qwen models cannot run on PACE clusters (prohibited per [PSG SS-22-002](https://gta-psg.georgia.gov/psg/prohibited-software-services-ss-22-002))
 - **In-Context Learning (ICL):** Requires separate setup instructions (see the directory README)
