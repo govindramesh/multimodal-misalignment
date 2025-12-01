@@ -1,0 +1,54 @@
+{
+  "title": "Toxicity",
+  "header": [
+    {
+      "value": "Model",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperforms on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "MM-SafetyBench - Toxic fraction",
+      "description": "Exposes the vulnerability of open-source VLMs with toxic and biased content ([Liu et al., 2023](https://arxiv.org/abs/2311.17600)).\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Toxic fraction",
+        "run_group": "MM-SafetyBench"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-100%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "benchmark_output/runs/v1/groups/latex/safety_toxicity.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "benchmark_output/runs/v1/groups/json/safety_toxicity.json"
+    }
+  ],
+  "name": "toxicity"
+}
