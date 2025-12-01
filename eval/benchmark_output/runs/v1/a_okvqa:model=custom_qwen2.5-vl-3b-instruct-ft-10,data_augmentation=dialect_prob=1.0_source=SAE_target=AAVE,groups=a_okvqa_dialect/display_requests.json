@@ -1,0 +1,833 @@
+[
+  {
+    "instance_id": "id17323",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/DPtUMrxDbLP2nQ9yUdmvkT.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "How many vehicles have their lights on?\nA. three\nB. one\nC. none\nD. two\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17756",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/XkEu3gmYW23qTivgmHP3fN.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What does the color of the stoplight mean?\nA. go\nB. stop\nC. get out\nD. caution\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17756",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/XkEu3gmYW23qTivgmHP3fN.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What does da color of da stoplight mean?\nA. go\nB. stop\nC. get out\nD. caution\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17678",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/UYqcgLGSbQXzeDLUj6rZej.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What is the large white object on the elephant called?\nA. tusk\nB. tooth\nC. horn\nD. bone\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17678",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/UYqcgLGSbQXzeDLUj6rZej.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What is da large white object on da elephant called?\nA. tusk\nB. tooth\nC. horn\nD. bone\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17798",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/Zkx2Q6dT8tpX5CaHAVoLzA.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What is on the left side of the painting that is on the counter?\nA. hair\nB. cat\nC. dog\nD. plant\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17798",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/Zkx2Q6dT8tpX5CaHAVoLzA.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What is on da left side of da painting dat is on da counter?\nA. hair\nB. cat\nC. dog\nD. plant\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17810",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/aJHeEgCPQ2LCEwtsZWbd9Q.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "How can we tell a building is under construction in this area?\nA. crane\nB. video\nC. dump truck\nD. signs\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17810",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/aJHeEgCPQ2LCEwtsZWbd9Q.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "How can we tell a building is under construction in dis area?\nA. crane\nB. video\nC. dump truck\nD. signs\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17802",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/ZthUeysacKx2CVGPpNKxe4.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What are the traditional long printed skirts worn by the women called?\nA. broomstick skirt\nB. sarong\nC. prairie skirt\nD. accordion skirt\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17802",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/ZthUeysacKx2CVGPpNKxe4.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What r the traditional long printed skirts worn by da women called?\nA. broomstick skirt\nB. sarong\nC. prairie skirt\nD. accordion skirt\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17070",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/2oPzCyj5FjrKtBLjGZH2rF.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What flag is represented on the wall?\nA. english\nB. moravian\nC. american\nD. french\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17070",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/2oPzCyj5FjrKtBLjGZH2rF.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What flag is represented on da wall?\nA. english\nB. moravian\nC. american\nD. french\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17061",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/2GhdXLaZFBYHSip4rvYKfK.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "The thing on the animal to the left's head is similar to what is on the head of what else?\nA. devil\nB. zombie\nC. vampire\nD. witch\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17061",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/2GhdXLaZFBYHSip4rvYKfK.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "The thing on da animal to da left's head is similar to wat is on da head of wht else?\nA. devil\nB. zombie\nC. vampire\nD. witch\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17774",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/YofsNmbN6XCqNdfHTBmzNq.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What are the objects made of?\nA. plastic\nB. wood\nC. metal\nD. acrylic\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17774",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/YofsNmbN6XCqNdfHTBmzNq.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What r the objects made of?\nA. plastic\nB. wood\nC. metal\nD. acrylic\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17108",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/4dnt6ahNTCENKrvBhExyvV.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "Is the man on the left platform going to board the train?\nA. yes\nB. absolutely no\nC. probably yes\nD. probably no\nAnswer:"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id17108",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 1,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/a_okvqa/images/4dnt6ahNTCENKrvBhExyvV.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "Is da man on da left platform goin to board da train?\nA. yes\nB. absolutely no\nC. probably yes\nD. probably no\nAnswer:"
+          }
+        ]
+      }
+    }
+  }
+]

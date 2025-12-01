@@ -1,0 +1,165 @@
+{
+  "title": "Accuracy",
+  "header": [
+    {
+      "value": "Model",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperforms on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "Unicorn - PEM",
+      "description": "Safety Evaluation Benchmark for Evaluating on Out-of-Distribution and Sketch Images ([Tu et al., 2023](https://arxiv.org/abs/2311.16101)).\n\nPrefix quasi-exact match: Fraction of instances that the predicted output matches the prefix of a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "PEM",
+        "run_group": "Unicorn"
+      }
+    },
+    {
+      "value": "Bingo - Prometheus Vision rating",
+      "description": "Open-ended questions about biased images and hallucinations-inducing images ([Cui et al., 2023](https://arxiv.org/abs/2311.03287)).\n\nPrometheus Vision rating: Scores are from 1 to 5, where 5 is the best.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "Prometheus Vision rating",
+        "run_group": "Bingo"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-05%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.9,
+        "description": "min=0.9, mean=0.9, max=0.9, sum=1.8 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "run_spec_names": [
+          "unicorn:subject=OODCV-VQA,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "unicorn:subject=Sketchy-VQA,model=custom_qwen2.5-vl-3b-instruct-ft-05"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-10%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "markdown": false
+      },
+      {
+        "value": 0.8500000000000001,
+        "description": "min=0.8, mean=0.85, max=0.9, sum=1.7 (2)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "unicorn:subject=OODCV-VQA,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "unicorn:subject=Sketchy-VQA,model=custom_qwen2.5-vl-3b-instruct-ft-10"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-25%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.9,
+        "description": "min=0.9, mean=0.9, max=0.9, sum=1.8 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "run_spec_names": [
+          "unicorn:subject=OODCV-VQA,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "unicorn:subject=Sketchy-VQA,model=custom_qwen2.5-vl-3b-instruct-ft-25"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-50%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.9,
+        "description": "min=0.9, mean=0.9, max=0.9, sum=1.8 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "run_spec_names": [
+          "unicorn:subject=OODCV-VQA,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "unicorn:subject=Sketchy-VQA,model=custom_qwen2.5-vl-3b-instruct-ft-50"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "benchmark_output/runs/v1/groups/latex/robustness_accuracy.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "benchmark_output/runs/v1/groups/json/robustness_accuracy.json"
+    }
+  ],
+  "name": "accuracy"
+}

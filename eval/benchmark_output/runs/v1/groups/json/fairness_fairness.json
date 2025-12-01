@@ -1,0 +1,175 @@
+{
+  "title": "Fairness",
+  "header": [
+    {
+      "value": "Model",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperforms on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "VQAv2 (AAE) - PEM (Fairness)",
+      "description": "African-American English Perturbation + Open-ended questions about real-world images ([Goyal et al., 2017](https://arxiv.org/abs/1612.00837)).\n\nPrefix quasi-exact match: Fraction of instances that the predicted output matches the prefix of a correct reference up to light processing.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "PEM",
+        "run_group": "VQAv2 (AAE)",
+        "perturbation": "Fairness"
+      }
+    },
+    {
+      "value": "A-OKVQA (AAE) - PEM (Fairness)",
+      "description": "African-American English Perturbation + A-OKVQA ([Schwenk et al., 2022](https://arxiv.org/abs/2206.01718)).\n\nPrefix quasi-exact match: Fraction of instances that the predicted output matches the prefix of a correct reference up to light processing.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "PEM",
+        "run_group": "A-OKVQA (AAE)",
+        "perturbation": "Fairness"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-05%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.25,
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.3, mean=0.3, max=0.3, sum=0.3 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "vqa:model=custom_qwen2.5-vl-3b-instruct-ft-05,data_augmentation=dialect_prob=1.0_source=SAE_target=AAVE,groups=vqa_dialect"
+        ]
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "a_okvqa:model=custom_qwen2.5-vl-3b-instruct-ft-05,data_augmentation=dialect_prob=1.0_source=SAE_target=AAVE,groups=a_okvqa_dialect"
+        ]
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-10%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.25,
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.3, mean=0.3, max=0.3, sum=0.3 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "vqa:model=custom_qwen2.5-vl-3b-instruct-ft-10,data_augmentation=dialect_prob=1.0_source=SAE_target=AAVE,groups=vqa_dialect"
+        ]
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "a_okvqa:model=custom_qwen2.5-vl-3b-instruct-ft-10,data_augmentation=dialect_prob=1.0_source=SAE_target=AAVE,groups=a_okvqa_dialect"
+        ]
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-25%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "run_spec_names": [
+          "vqa:model=custom_qwen2.5-vl-3b-instruct-ft-25,data_augmentation=dialect_prob=1.0_source=SAE_target=AAVE,groups=vqa_dialect"
+        ]
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "a_okvqa:model=custom_qwen2.5-vl-3b-instruct-ft-25,data_augmentation=dialect_prob=1.0_source=SAE_target=AAVE,groups=a_okvqa_dialect"
+        ]
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-50%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8333333333333333,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.4,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "vqa:model=custom_qwen2.5-vl-3b-instruct-ft-50,data_augmentation=dialect_prob=1.0_source=SAE_target=AAVE,groups=vqa_dialect"
+        ]
+      },
+      {
+        "value": 0.8,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=0.8 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "run_spec_names": [
+          "a_okvqa:model=custom_qwen2.5-vl-3b-instruct-ft-50,data_augmentation=dialect_prob=1.0_source=SAE_target=AAVE,groups=a_okvqa_dialect"
+        ]
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "benchmark_output/runs/v1/groups/latex/fairness_fairness.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "benchmark_output/runs/v1/groups/json/fairness_fairness.json"
+    }
+  ],
+  "name": "fairness"
+}

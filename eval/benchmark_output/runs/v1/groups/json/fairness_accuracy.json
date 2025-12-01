@@ -1,0 +1,255 @@
+{
+  "title": "Accuracy",
+  "header": [
+    {
+      "value": "Model",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperforms on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "Crossmodal 3600 - Prometheus Vision rating",
+      "description": "Crossmodal-3600 dataset (XM3600 in short), a geographically-diverse set of 3600 images annotated with human-generated reference captions in 36 languages. ([Thapliyal et al., 2022](https://arxiv.org/abs/2205.12522))\n\nPrometheus Vision rating: Scores are from 1 to 5, where 5 is the best.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "Prometheus Vision rating",
+        "run_group": "Crossmodal 3600"
+      }
+    },
+    {
+      "value": "FairFace - PEM",
+      "description": "Identify the race, gender or age of a photo of a person ([Karkkainen et al., 2019](https://arxiv.org/abs/1908.04913)).\n\nPrefix quasi-exact match: Fraction of instances that the predicted output matches the prefix of a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "PEM",
+        "run_group": "FairFace"
+      }
+    },
+    {
+      "value": "Bingo (fairness) - Prometheus Vision rating",
+      "description": "Open-ended questions about biased images and hallucinations-inducing images ([Cui et al., 2023](https://arxiv.org/abs/2311.03287)).\n\nPrometheus Vision rating: Scores are from 1 to 5, where 5 is the best.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "Prometheus Vision rating",
+        "run_group": "Bingo (fairness)"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-05%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.611111111111111,
+        "description": "min=0.1, mean=0.611, max=1, sum=11.0 (18)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "run_spec_names": [
+          "fair_face:attribute=age,subgroup=0-2_years,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=age,subgroup=10-19_years,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=age,subgroup=20-29_years,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=age,subgroup=3-9_years,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=age,subgroup=30-39_years,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=age,subgroup=40-49_years,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=age,subgroup=50-59_years,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=age,subgroup=60-69_years,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=age,subgroup=Over_70_years,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=gender,subgroup=Female,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=gender,subgroup=Male,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=race,subgroup=Black,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=race,subgroup=East_Asian,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=race,subgroup=Indian,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=race,subgroup=Latino_Hispanic,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=race,subgroup=Middle_Eastern,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=race,subgroup=Southeast_Asian,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "fair_face:attribute=race,subgroup=White,model=custom_qwen2.5-vl-3b-instruct-ft-05"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-10%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.5888888888888888,
+        "description": "min=0, mean=0.589, max=1, sum=10.6 (18)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "fair_face:attribute=age,subgroup=0-2_years,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=age,subgroup=10-19_years,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=age,subgroup=20-29_years,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=age,subgroup=3-9_years,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=age,subgroup=30-39_years,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=age,subgroup=40-49_years,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=age,subgroup=50-59_years,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=age,subgroup=60-69_years,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=age,subgroup=Over_70_years,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=gender,subgroup=Female,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=gender,subgroup=Male,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=race,subgroup=Black,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=race,subgroup=East_Asian,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=race,subgroup=Indian,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=race,subgroup=Latino_Hispanic,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=race,subgroup=Middle_Eastern,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=race,subgroup=Southeast_Asian,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "fair_face:attribute=race,subgroup=White,model=custom_qwen2.5-vl-3b-instruct-ft-10"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-25%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.611111111111111,
+        "description": "min=0, mean=0.611, max=1, sum=11.0 (18)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "run_spec_names": [
+          "fair_face:attribute=age,subgroup=0-2_years,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=age,subgroup=10-19_years,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=age,subgroup=20-29_years,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=age,subgroup=3-9_years,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=age,subgroup=30-39_years,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=age,subgroup=40-49_years,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=age,subgroup=50-59_years,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=age,subgroup=60-69_years,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=age,subgroup=Over_70_years,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=gender,subgroup=Female,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=gender,subgroup=Male,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=race,subgroup=Black,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=race,subgroup=East_Asian,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=race,subgroup=Indian,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=race,subgroup=Latino_Hispanic,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=race,subgroup=Middle_Eastern,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=race,subgroup=Southeast_Asian,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "fair_face:attribute=race,subgroup=White,model=custom_qwen2.5-vl-3b-instruct-ft-25"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-50%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.611111111111111,
+        "description": "min=0.1, mean=0.611, max=1, sum=11.0 (18)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "run_spec_names": [
+          "fair_face:attribute=age,subgroup=0-2_years,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=age,subgroup=10-19_years,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=age,subgroup=20-29_years,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=age,subgroup=3-9_years,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=age,subgroup=30-39_years,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=age,subgroup=40-49_years,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=age,subgroup=50-59_years,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=age,subgroup=60-69_years,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=age,subgroup=Over_70_years,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=gender,subgroup=Female,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=gender,subgroup=Male,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=race,subgroup=Black,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=race,subgroup=East_Asian,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=race,subgroup=Indian,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=race,subgroup=Latino_Hispanic,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=race,subgroup=Middle_Eastern,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=race,subgroup=Southeast_Asian,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "fair_face:attribute=race,subgroup=White,model=custom_qwen2.5-vl-3b-instruct-ft-50"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "benchmark_output/runs/v1/groups/latex/fairness_accuracy.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "benchmark_output/runs/v1/groups/json/fairness_accuracy.json"
+    }
+  ],
+  "name": "accuracy"
+}

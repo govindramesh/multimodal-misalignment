@@ -1,0 +1,169 @@
+{
+  "title": "Accuracy",
+  "header": [
+    {
+      "value": "Model",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperforms on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "PAIRS - PEM",
+      "description": "Examining gender and racial bias using parallel images ([Fraser et al., 2024](https://arxiv.org/abs/2402.05779)).\n\nPrefix quasi-exact match: Fraction of instances that the predicted output matches the prefix of a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "PEM",
+        "run_group": "PAIRS"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-05%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "markdown": false
+      },
+      {
+        "value": 0.42870370370370364,
+        "description": "min=0.2, mean=0.429, max=0.6, sum=5.144 (12)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pairs:subset=occupations,person=black_man,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "pairs:subset=occupations,person=black_woman,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "pairs:subset=occupations,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "pairs:subset=occupations,person=white_woman,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "pairs:subset=potential_crime,person=black_man,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "pairs:subset=potential_crime,person=black_woman,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "pairs:subset=potential_crime,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "pairs:subset=potential_crime,person=white_woman,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "pairs:subset=status,person=black_man,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "pairs:subset=status,person=black_woman,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "pairs:subset=status,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-05",
+          "pairs:subset=status,person=white_woman,model=custom_qwen2.5-vl-3b-instruct-ft-05"
+        ]
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-10%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.4574074074074073,
+        "description": "min=0.2, mean=0.457, max=0.6, sum=5.489 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "run_spec_names": [
+          "pairs:subset=occupations,person=black_man,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "pairs:subset=occupations,person=black_woman,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "pairs:subset=occupations,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "pairs:subset=occupations,person=white_woman,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "pairs:subset=potential_crime,person=black_man,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "pairs:subset=potential_crime,person=black_woman,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "pairs:subset=potential_crime,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "pairs:subset=potential_crime,person=white_woman,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "pairs:subset=status,person=black_man,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "pairs:subset=status,person=black_woman,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "pairs:subset=status,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-10",
+          "pairs:subset=status,person=white_woman,model=custom_qwen2.5-vl-3b-instruct-ft-10"
+        ]
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-25%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "markdown": false
+      },
+      {
+        "value": 0.41944444444444445,
+        "description": "min=0.2, mean=0.419, max=0.7, sum=5.033 (12)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pairs:subset=occupations,person=black_man,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "pairs:subset=occupations,person=black_woman,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "pairs:subset=occupations,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "pairs:subset=occupations,person=white_woman,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "pairs:subset=potential_crime,person=black_man,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "pairs:subset=potential_crime,person=black_woman,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "pairs:subset=potential_crime,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "pairs:subset=potential_crime,person=white_woman,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "pairs:subset=status,person=black_man,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "pairs:subset=status,person=black_woman,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "pairs:subset=status,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-25",
+          "pairs:subset=status,person=white_woman,model=custom_qwen2.5-vl-3b-instruct-ft-25"
+        ]
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-50%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "markdown": false
+      },
+      {
+        "value": 0.41111111111111104,
+        "description": "min=0.2, mean=0.411, max=0.6, sum=4.933 (12)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pairs:subset=occupations,person=black_man,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "pairs:subset=occupations,person=black_woman,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "pairs:subset=occupations,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "pairs:subset=occupations,person=white_woman,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "pairs:subset=potential_crime,person=black_man,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "pairs:subset=potential_crime,person=black_woman,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "pairs:subset=potential_crime,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "pairs:subset=potential_crime,person=white_woman,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "pairs:subset=status,person=black_man,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "pairs:subset=status,person=black_woman,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "pairs:subset=status,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-50",
+          "pairs:subset=status,person=white_woman,model=custom_qwen2.5-vl-3b-instruct-ft-50"
+        ]
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "benchmark_output/runs/v1/groups/latex/bias_accuracy.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "benchmark_output/runs/v1/groups/json/bias_accuracy.json"
+    }
+  ],
+  "name": "accuracy"
+}

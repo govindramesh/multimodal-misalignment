@@ -1,0 +1,1655 @@
+[
+  {
+    "title": "All scenarios",
+    "header": [
+      {
+        "value": "Group",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Description",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Adaptation method",
+        "description": "Adaptation strategy (e.g., generation)",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# instances",
+        "description": "Number of instances evaluated on",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# references",
+        "description": "Number of references provided per instance",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "Total number of prompt tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# completion tokens",
+        "description": "Total number of completion tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# models",
+        "description": "Number of models we're evaluating",
+        "markdown": false,
+        "metadata": {}
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "All",
+          "href": "?group=core_scenarios",
+          "markdown": false
+        },
+        {
+          "value": "All scenarios across capabilities",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_joint_multimodal, generation_multimodal",
+          "markdown": false
+        },
+        {
+          "value": 9.772151898734178,
+          "description": "min=8, mean=9.772, max=10, sum=1544 (158)",
+          "markdown": false
+        },
+        {
+          "value": 5.746835443037975,
+          "description": "min=1, mean=5.747, max=10, sum=2724 (474)",
+          "markdown": false
+        },
+        {
+          "value": 28340.488888888853,
+          "description": "min=21.1, mean=59.79, max=112, sum=28340.489 (474)",
+          "markdown": false
+        },
+        {
+          "value": 517.1499999999999,
+          "description": "min=1, mean=1.091, max=2.8, sum=517.15 (474)",
+          "markdown": false
+        },
+        {
+          "value": 4,
+          "markdown": false
+        }
+      ]
+    ],
+    "links": []
+  },
+  {
+    "title": "Core scenarios",
+    "header": [
+      {
+        "value": "Group",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Description",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Adaptation method",
+        "description": "Adaptation strategy (e.g., generation)",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# instances",
+        "description": "Number of instances evaluated on",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# references",
+        "description": "Number of references provided per instance",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "Total number of prompt tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# completion tokens",
+        "description": "Total number of completion tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# models",
+        "description": "Number of models we're evaluating",
+        "markdown": false,
+        "metadata": {}
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "Visual perception",
+          "href": "?group=visual_perception",
+          "markdown": false
+        },
+        {
+          "value": "Is the output semantically correct, given the text and image inputs?",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_joint_multimodal, generation_multimodal",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=60 (6)",
+          "markdown": false
+        },
+        {
+          "value": 4.666666666666667,
+          "description": "min=2, mean=4.667, max=10, sum=84 (18)",
+          "markdown": false
+        },
+        {
+          "value": 670.8000000000001,
+          "description": "min=33.7, mean=37.267, max=44.4, sum=670.8 (18)",
+          "markdown": false
+        },
+        {
+          "value": 28.8,
+          "description": "min=1, mean=1.6, max=2.8, sum=28.8 (18)",
+          "markdown": false
+        },
+        {
+          "value": 4,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Reasoning",
+          "href": "?group=reasoning",
+          "markdown": false
+        },
+        {
+          "value": "Does the model understand objects, counts and spatial relations? Can the model reason about both the text and image input?",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Knowledge",
+          "href": "?group=knowledge",
+          "markdown": false
+        },
+        {
+          "value": "Does the model have knowledge about the world and common sense?",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Bias",
+          "href": "?group=bias",
+          "markdown": false
+        },
+        {
+          "value": "Are the generations biased in demographic representation? We focus on gender and skin tone bias.",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_joint_multimodal",
+          "markdown": false
+        },
+        {
+          "value": 9.666666666666666,
+          "description": "min=9, mean=9.667, max=10, sum=464 (48)",
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=432 (144)",
+          "markdown": false
+        },
+        {
+          "value": 5900.799999999991,
+          "description": "min=39.333, mean=40.978, max=41.9, sum=5900.8 (144)",
+          "markdown": false
+        },
+        {
+          "value": 144.0,
+          "description": "min=1, mean=1, max=1, sum=144 (144)",
+          "markdown": false
+        },
+        {
+          "value": 4,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Fairness",
+          "href": "?group=fairness",
+          "markdown": false
+        },
+        {
+          "value": "Does the model exhibit performance disparities across different groups? We focus on gender, dialect and geographic bias.",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_joint_multimodal, generation_multimodal",
+          "markdown": false
+        },
+        {
+          "value": 9.791666666666666,
+          "description": "min=8, mean=9.792, max=10, sum=940 (96)",
+          "markdown": false
+        },
+        {
+          "value": 7.583333333333333,
+          "description": "min=2, mean=7.583, max=10, sum=2184 (288)",
+          "markdown": false
+        },
+        {
+          "value": 21255.288888888892,
+          "description": "min=36, mean=73.803, max=112, sum=21255.289 (288)",
+          "markdown": false
+        },
+        {
+          "value": 320.35,
+          "description": "min=1, mean=1.112, max=2.8, sum=320.35 (288)",
+          "markdown": false
+        },
+        {
+          "value": 4,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Toxicity",
+          "href": "?group=toxicity",
+          "markdown": false
+        },
+        {
+          "value": "Does the model generate toxic or inappropriate content? Can the model identify toxic or inappropriate content?",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Safety",
+          "href": "?group=safety",
+          "markdown": false
+        },
+        {
+          "value": "Refusing to produce answers that cause harm to humans",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Robustness",
+          "href": "?group=robustness",
+          "markdown": false
+        },
+        {
+          "value": "Is the model robust to perturbations? We focus on both text and image perturbations.",
+          "markdown": true
+        },
+        {
+          "value": "generation_multimodal",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=80 (8)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=24 (24)",
+          "markdown": false
+        },
+        {
+          "value": 513.6,
+          "description": "min=21.1, mean=21.4, max=21.7, sum=513.6 (24)",
+          "markdown": false
+        },
+        {
+          "value": 24.0,
+          "description": "min=1, mean=1, max=1, sum=24 (24)",
+          "markdown": false
+        },
+        {
+          "value": 4,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Multilinguality",
+          "href": "?group=multilinguality",
+          "markdown": false
+        },
+        {
+          "value": "Do the model support non-English languages?",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ]
+    ],
+    "links": []
+  },
+  {
+    "title": "Scenarios",
+    "header": [
+      {
+        "value": "Group",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Description",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Adaptation method",
+        "description": "Adaptation strategy (e.g., generation)",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# instances",
+        "description": "Number of instances evaluated on",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# references",
+        "description": "Number of references provided per instance",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "Total number of prompt tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# completion tokens",
+        "description": "Total number of completion tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# models",
+        "description": "Number of models we're evaluating",
+        "markdown": false,
+        "metadata": {}
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "A-OKVQA",
+          "href": "?group=a_okvqa_base",
+          "markdown": false
+        },
+        {
+          "value": "A crowdsourced dataset composed of a diverse set of about 25K questions requiring a broad base of commonsense and world knowledge to answer ([Schwenk et al., 2022](https://arxiv.org/abs/2206.01718)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "A-OKVQA (AAE)",
+          "href": "?group=a_okvqa_dialect",
+          "markdown": false
+        },
+        {
+          "value": "African-American English Perturbation + A-OKVQA ([Schwenk et al., 2022](https://arxiv.org/abs/2206.01718)).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_joint_multimodal",
+          "markdown": false
+        },
+        {
+          "value": 9.5,
+          "description": "min=9, mean=9.5, max=10, sum=76 (8)",
+          "markdown": false
+        },
+        {
+          "value": 4.0,
+          "description": "min=4, mean=4, max=4, sum=96 (24)",
+          "markdown": false
+        },
+        {
+          "value": 1121.6888888888886,
+          "description": "min=46.4, mean=46.737, max=47.222, sum=1121.689 (24)",
+          "markdown": false
+        },
+        {
+          "value": 24.0,
+          "description": "min=1, mean=1, max=1, sum=24 (24)",
+          "markdown": false
+        },
+        {
+          "value": 4,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "A-OKVQA (chinese)",
+          "href": "?group=a_okvqa_chinese",
+          "markdown": false
+        },
+        {
+          "value": "Chinese Translation Perturbation + A-OKVQA ([Schwenk et al., 2022](https://arxiv.org/abs/2206.01718)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "A-OKVQA (hindi)",
+          "href": "?group=a_okvqa_hindi",
+          "markdown": false
+        },
+        {
+          "value": "Hindi Translation Perturbation + A-OKVQA ([Schwenk et al., 2022](https://arxiv.org/abs/2206.01718)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "A-OKVQA (spanish)",
+          "href": "?group=a_okvqa_spanish",
+          "markdown": false
+        },
+        {
+          "value": "Spanish Translation Perturbation + A-OKVQA ([Schwenk et al., 2022](https://arxiv.org/abs/2206.01718)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "A-OKVQA (swahili)",
+          "href": "?group=a_okvqa_swahili",
+          "markdown": false
+        },
+        {
+          "value": "Swahili Translation Perturbation + A-OKVQA ([Schwenk et al., 2022](https://arxiv.org/abs/2206.01718)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MM-Star (Perception subsets)",
+          "href": "?group=mm_star_perception",
+          "markdown": false
+        },
+        {
+          "value": "MM-STAR is an elite vision-indispensable multi-modal benchmark comprising 1,500 challenge samples meticulously selected by humans. ([Chen et al., 2024](https://arxiv.org/abs/2403.20330)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MM-Star (Reasoning subsets)",
+          "href": "?group=mm_star_reasoning",
+          "markdown": false
+        },
+        {
+          "value": "MM-STAR is an elite vision-indispensable multi-modal benchmark comprising 1,500 challenge samples meticulously selected by humans. ([Chen et al., 2024](https://arxiv.org/abs/2403.20330)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MM-Star (Knowledge subsets)",
+          "href": "?group=mm_star_knowledge",
+          "markdown": false
+        },
+        {
+          "value": "MM-STAR is an elite vision-indispensable multi-modal benchmark comprising 1,500 challenge samples meticulously selected by humans. ([Chen et al., 2024](https://arxiv.org/abs/2403.20330)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "BLINK (Perception subsets)",
+          "href": "?group=blink_perception",
+          "markdown": false
+        },
+        {
+          "value": "BLINK is a benchmark containing 14 visual perception tasks that can be solved by humans within a blink, but difficulty for VLMs. ([Fu, 2024](https://arxiv.org/abs/2404.12390)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "BLINK (Knowledge subsets)",
+          "href": "?group=blink_knowledge",
+          "markdown": false
+        },
+        {
+          "value": "BLINK is a benchmark containing 14 visual perception tasks that can be solved by humans within a blink, but difficulty for VLMs. ([Fu, 2024](https://arxiv.org/abs/2404.12390)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "BLINK (Reasoning subsets)",
+          "href": "?group=blink_reasoning",
+          "markdown": false
+        },
+        {
+          "value": "BLINK is a benchmark containing 14 visual perception tasks that can be solved by humans within a blink, but difficulty for VLMs. ([Fu, 2024](https://arxiv.org/abs/2404.12390)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Crossmodal 3600",
+          "href": "?group=crossmodal_3600",
+          "markdown": false
+        },
+        {
+          "value": "Crossmodal-3600 dataset (XM3600 in short), a geographically-diverse set of 3600 images annotated with human-generated reference captions in 36 languages. ([Thapliyal et al., 2022](https://arxiv.org/abs/2205.12522))",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Flickr30k",
+          "href": "?group=flickr30k",
+          "markdown": false
+        },
+        {
+          "value": "An image caption corpus consisting of 158,915 crowd-sourced captions describing 31,783 Flickr images. ([Young et al., 2014](https://shannon.cs.illinois.edu/DenotationGraph/TACLDenotationGraph.pdf))",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GQA",
+          "href": "?group=gqa",
+          "markdown": false
+        },
+        {
+          "value": "Questions about real-world visual reasoning and compositional QA ([Hudson and Manning, 2019](https://arxiv.org/abs/1902.09506)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Hateful Memes",
+          "href": "?group=hateful_memes",
+          "markdown": false
+        },
+        {
+          "value": "Multimodal hate speech detection in memes ([Kiela et al., 2020](https://arxiv.org/abs/2005.04790)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MM-SafetyBench",
+          "href": "?group=mm_safety_bench",
+          "markdown": false
+        },
+        {
+          "value": "Exposes the vulnerability of open-source VLMs with toxic and biased content ([Liu et al., 2023](https://arxiv.org/abs/2311.17600)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "VizWiz",
+          "href": "?group=viz_wiz",
+          "markdown": false
+        },
+        {
+          "value": "A benchmark for visual question answering with images and questions created by visually impaired people ([Gurari et al., 2018](https://arxiv.org/abs/1802.08218)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "VQAv2",
+          "href": "?group=vqa_base",
+          "markdown": false
+        },
+        {
+          "value": "Open-ended questions about real-world images ([Goyal et al., 2017](https://arxiv.org/abs/1612.00837)).",
+          "markdown": true
+        },
+        {
+          "value": "generation_multimodal",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=20 (2)",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=60 (6)",
+          "markdown": false
+        },
+        {
+          "value": 266.4,
+          "description": "min=44.4, mean=44.4, max=44.4, sum=266.4 (6)",
+          "markdown": false
+        },
+        {
+          "value": 16.8,
+          "description": "min=2.8, mean=2.8, max=2.8, sum=16.8 (6)",
+          "markdown": false
+        },
+        {
+          "value": 1,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "VQAv2 (AAE)",
+          "href": "?group=vqa_dialect",
+          "markdown": false
+        },
+        {
+          "value": "African-American English Perturbation + Open-ended questions about real-world images ([Goyal et al., 2017](https://arxiv.org/abs/1612.00837)).",
+          "markdown": true
+        },
+        {
+          "value": "generation_multimodal",
+          "markdown": false
+        },
+        {
+          "value": 9.0,
+          "description": "min=8, mean=9, max=10, sum=144 (16)",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=480 (48)",
+          "markdown": false
+        },
+        {
+          "value": 2133.600000000001,
+          "description": "min=44.375, mean=44.45, max=44.75, sum=2133.6 (48)",
+          "markdown": false
+        },
+        {
+          "value": 80.35,
+          "description": "min=1.1, mean=1.674, max=2.8, sum=80.35 (48)",
+          "markdown": false
+        },
+        {
+          "value": 4,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MathVista",
+          "href": "?group=math_vista",
+          "markdown": false
+        },
+        {
+          "value": "A benchmark designed to combine challenges from diverse mathematical and visual tasks ([Lu et al., 2024](https://arxiv.org/abs/2310.02255)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MMMU",
+          "href": "?group=mmmu",
+          "markdown": false
+        },
+        {
+          "value": "A benchmark designed to evaluate multimodal models on massive multi-discipline tasks demanding college-level subject knowledge and deliberate reasoning ([Yue et al., 2023](https://arxiv.org/abs/2311.16502)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Unicorn",
+          "href": "?group=unicorn",
+          "markdown": false
+        },
+        {
+          "value": "Safety Evaluation Benchmark for Evaluating on Out-of-Distribution and Sketch Images ([Tu et al., 2023](https://arxiv.org/abs/2311.16101)).",
+          "markdown": true
+        },
+        {
+          "value": "generation_multimodal",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=80 (8)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=24 (24)",
+          "markdown": false
+        },
+        {
+          "value": 513.6,
+          "description": "min=21.1, mean=21.4, max=21.7, sum=513.6 (24)",
+          "markdown": false
+        },
+        {
+          "value": 24.0,
+          "description": "min=1, mean=1, max=1, sum=24 (24)",
+          "markdown": false
+        },
+        {
+          "value": 4,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Bingo",
+          "href": "?group=bingo",
+          "markdown": false
+        },
+        {
+          "value": "Open-ended questions about biased images and hallucinations-inducing images ([Cui et al., 2023](https://arxiv.org/abs/2311.03287)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Bingo (fairness)",
+          "href": "?group=bingo_fairness",
+          "markdown": false
+        },
+        {
+          "value": "Open-ended questions about biased images and hallucinations-inducing images ([Cui et al., 2023](https://arxiv.org/abs/2311.03287)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Bingo (multilinguality)",
+          "href": "?group=bingo_multilinguality",
+          "markdown": false
+        },
+        {
+          "value": "Open-ended questions about biased images and hallucinations-inducing images ([Cui et al., 2023](https://arxiv.org/abs/2311.03287)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "POPE",
+          "href": "?group=pope",
+          "markdown": false
+        },
+        {
+          "value": "Open-ended questions about object appearance in real-world images for evaluating hallucination behaviour ([Li et al., 2023](https://aclanthology.org/2023.emnlp-main.20)).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_joint_multimodal",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=40 (4)",
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=24 (12)",
+          "markdown": false
+        },
+        {
+          "value": 404.3999999999999,
+          "description": "min=33.7, mean=33.7, max=33.7, sum=404.4 (12)",
+          "markdown": false
+        },
+        {
+          "value": 12.0,
+          "description": "min=1, mean=1, max=1, sum=12 (12)",
+          "markdown": false
+        },
+        {
+          "value": 4,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Seed Bench",
+          "href": "?group=seed_bench",
+          "markdown": false
+        },
+        {
+          "value": "A massive multiple-choice question-answering benchmark that spans 9 evaluation aspects with the image input including the comprehension of both the image and video modality ([Li et al., 2023](https://arxiv.org/abs/2307.16125)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MME",
+          "href": "?group=mme",
+          "markdown": false
+        },
+        {
+          "value": "A comprehensive MLLM Evaluation benchmark with perception and cognition evaluations on 14 subtasks ([Fu et al., 2023](https://arxiv.org/abs/2306.13394)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Vibe Eval",
+          "href": "?group=vibe_eval",
+          "markdown": false
+        },
+        {
+          "value": "A difficult evaluation suite for measuring progress of multimodal language models with day-to-day tasks ([Padlewski et al., 2024](https://arxiv.org/abs/2405.02287)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Mementos",
+          "href": "?group=mementos",
+          "markdown": false
+        },
+        {
+          "value": "A Comprehensive Benchmark for Multimodal Large Language Model Reasoning over Image Sequences ([Wang et al., 2024](https://arxiv.org/abs/2401.10529)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "PAIRS",
+          "href": "?group=pairs",
+          "markdown": false
+        },
+        {
+          "value": "Examining gender and racial bias using parallel images ([Fraser et al., 2024](https://arxiv.org/abs/2402.05779)).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_joint_multimodal",
+          "markdown": false
+        },
+        {
+          "value": 9.666666666666666,
+          "description": "min=9, mean=9.667, max=10, sum=464 (48)",
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=432 (144)",
+          "markdown": false
+        },
+        {
+          "value": 5900.799999999991,
+          "description": "min=39.333, mean=40.978, max=41.9, sum=5900.8 (144)",
+          "markdown": false
+        },
+        {
+          "value": 144.0,
+          "description": "min=1, mean=1, max=1, sum=144 (144)",
+          "markdown": false
+        },
+        {
+          "value": 4,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "FairFace",
+          "href": "?group=fair_face",
+          "markdown": false
+        },
+        {
+          "value": "Identify the race, gender or age of a photo of a person ([Karkkainen et al., 2019](https://arxiv.org/abs/1908.04913)).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_joint_multimodal",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=720 (72)",
+          "markdown": false
+        },
+        {
+          "value": 7.444444444444445,
+          "description": "min=2, mean=7.444, max=9, sum=1608 (216)",
+          "markdown": false
+        },
+        {
+          "value": 18000.0,
+          "description": "min=36, mean=83.333, max=112, sum=18000 (216)",
+          "markdown": false
+        },
+        {
+          "value": 216.0,
+          "description": "min=1, mean=1, max=1, sum=216 (216)",
+          "markdown": false
+        },
+        {
+          "value": 4,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "RealWorldQA",
+          "href": "?group=real_world_qa",
+          "markdown": false
+        },
+        {
+          "value": "A benchmark designed to to evaluate real-world spatial understanding capabilities of multimodal models ([xAI, 2024](https://x.ai/blog/grok-1.5v)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Exams-V",
+          "href": "?group=exams_v",
+          "markdown": false
+        },
+        {
+          "value": "A multimodal and multilingual benchmark with knowledge-intensive exam questions covering natural science, social science, and other miscellaneous studies ([Das et al., 2024]( https://arxiv.org/abs/2403.10378)).",
+          "markdown": true
+        },
+        {
+          "value": "",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 0,
+          "markdown": false
+        }
+      ]
+    ],
+    "links": []
+  }
+]

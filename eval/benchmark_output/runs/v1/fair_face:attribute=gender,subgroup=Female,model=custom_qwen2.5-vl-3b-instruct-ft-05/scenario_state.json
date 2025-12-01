@@ -1,0 +1,1024 @@
+{
+  "adapter_spec": {
+    "method": "multiple_choice_joint_multimodal",
+    "global_prefix": "",
+    "global_suffix": "",
+    "instructions": "Answer the multiple choice question by just giving the letter of the correct answer.",
+    "input_prefix": "",
+    "input_suffix": "\n",
+    "reference_prefix": "A. ",
+    "reference_suffix": "\n",
+    "chain_of_thought_prefix": "",
+    "chain_of_thought_suffix": "\n",
+    "output_prefix": "Answer: ",
+    "output_suffix": "\n",
+    "instance_prefix": "\n",
+    "substitutions": [],
+    "max_train_instances": 0,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "num_trials": 1,
+    "sample_train": true,
+    "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+    "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+    "temperature": 0.0,
+    "max_tokens": 1,
+    "stop_sequences": [
+      "\n"
+    ],
+    "multi_label": false
+  },
+  "request_states": [
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/84a646e7dc39a3a8c869dcb20713e1be.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the gender of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Male"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Female"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id44002"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "Male",
+        "B": "Female"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/84a646e7dc39a3a8c869dcb20713e1be.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the gender of the person in the image.\nA. Male\nB. Female\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.587019681930542,
+        "request_datetime": 1764548708
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/177f15109fedb404835ea52a8ca691c4.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the gender of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Male"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Female"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id45346"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "Male",
+        "B": "Female"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/177f15109fedb404835ea52a8ca691c4.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the gender of the person in the image.\nA. Male\nB. Female\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.5986778736114502,
+        "request_datetime": 1764548708
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/ffd6d950c4a3b0fc2284c68484220b14.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the gender of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Male"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Female"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id42757"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "Male",
+        "B": "Female"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/ffd6d950c4a3b0fc2284c68484220b14.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the gender of the person in the image.\nA. Male\nB. Female\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.6048157215118408,
+        "request_datetime": 1764548708
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/8a8d5b96e0278121cebefdf1341a5bbc.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the gender of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Male"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Female"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id43382"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "Male",
+        "B": "Female"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/8a8d5b96e0278121cebefdf1341a5bbc.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the gender of the person in the image.\nA. Male\nB. Female\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.5867116451263428,
+        "request_datetime": 1764548708
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/ce40ab7ca22aac27275738ad6a47a40a.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the gender of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Male"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Female"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id43750"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "Male",
+        "B": "Female"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/ce40ab7ca22aac27275738ad6a47a40a.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the gender of the person in the image.\nA. Male\nB. Female\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.4716367721557617,
+        "request_datetime": 1764548709
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/575a73091a2eef3bbd5867e5dbb20824.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the gender of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Male"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Female"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id41982"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "Male",
+        "B": "Female"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/575a73091a2eef3bbd5867e5dbb20824.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the gender of the person in the image.\nA. Male\nB. Female\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.5015869140625,
+        "request_datetime": 1764548709
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/9a955d1279e347125ca164f2a3f03f00.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the gender of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Male"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Female"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id41474"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "Male",
+        "B": "Female"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/9a955d1279e347125ca164f2a3f03f00.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the gender of the person in the image.\nA. Male\nB. Female\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.4981074333190918,
+        "request_datetime": 1764548709
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/82b848fc5e9026a486c023b4c693cae0.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the gender of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Male"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Female"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id41934"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "Male",
+        "B": "Female"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/82b848fc5e9026a486c023b4c693cae0.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the gender of the person in the image.\nA. Male\nB. Female\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.5078701972961426,
+        "request_datetime": 1764548709
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/76459908c52eb7e28c946b4485f6f7f3.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the gender of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Male"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Female"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id44825"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "Male",
+        "B": "Female"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/76459908c52eb7e28c946b4485f6f7f3.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the gender of the person in the image.\nA. Male\nB. Female\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.2984597682952881,
+        "request_datetime": 1764548709
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/de9f3632337b40227f076f4c79370dab.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the gender of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Male"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Female"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id43671"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "Male",
+        "B": "Female"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/de9f3632337b40227f076f4c79370dab.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the gender of the person in the image.\nA. Male\nB. Female\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.21120548248291016,
+        "request_datetime": 1764548710
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    }
+  ]
+}
