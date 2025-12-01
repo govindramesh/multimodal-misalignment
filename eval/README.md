@@ -1,73 +1,64 @@
-> [!important]
-> Need to adjust `helm` files: replace `helm/clients/vision_language/qwen2_vlm_client.py` with the `qwen2_vlm_client.py` here.
-> Recommend a **LARGE** amount of storage for this, the datasets are up to 25 gigabytes each and downloading takes a lot of time, may run out of storage on PACE
-> icl eval requires separate instructions on how to run, see the README in the dir
-> Need to request a Perspective API key to evaluate the icl too, please adjust perspectiveApiKey: in ./prod_env/credentials.conf following the instructions [here](https://crfm-helm.readthedocs.io/en/latest/benchmark/#perspective-api)
+# Setup & Configuration
 
-The basic evaluation:
+## 1. **File Replacement**
+- Replace `helm/clients/vision_language/qwen2_vlm_client.py` with the provided `qwen2_vlm_client.py` in this directory
+
+## 2. **Important Notes**
+- **Storage Requirements:** Datasets can be up to 25GB *each*. Ensure sufficient storage space on the server.
+- **Qwen Restrictions:** Qwen models cannot run on PACE clusters (prohibited per [PSG SS-22-002](https://gta-psg.georgia.gov/psg/prohibited-software-services-ss-22-002))
+- **In-Context Learning (ICL):** Requires separate setup instructions (see the directory README)
+- **MM-Safety-Bench Dataset:**
+  1. Download images from [Google Drive](https://drive.google.com/uc?export=download&id=1xjW9k-aGkmwycqGCXbru70FaSKhSDcR_)
+  2. Place in `./benchmark_outputs/scenarios/mm_safety_bench/`
+  3. Unzip to run the dataset
+- **Perspective API:**
+  1. Request a Perspective API key
+  2. Add `perspectiveApiKey:` to `./prod_env/credentials.conf`
+  3. Follow [documentation](https://crfm-helm.readthedocs.io/en/latest/benchmark/#perspective-api) for details
+
+
+# Basic Evaluation Commands
+
 ```bash
-# Start a single evaluation
+# Run evaluation (10 instances replicates VHELM leaderboard setup)
 helm-run --conf-paths ./run_entries_vhelm.conf --suite v1 --models qwen2.5-vl-3b-instruct-local --max-eval-instances 10
-# local and finetunes are defined in prod_env
-# helper script `run_all_ft_models.sh` to run all the finetuned versions
-# suite is used to store evaluations together
 
-# summarize
+# Summarize results
 helm-summarize --suite v1 --schema-path schema_vhelm.yaml
-# use --suite icl for the icl evaluations
+# Use --suite icl for ICL evaluations
 
-# make plots
+# Generate plots
 helm-create-plots --suite v1
 
-# Start a web server to display benchmark results
+# View results in browser
 helm-server --suite v1
-# Then go to http://localhost:8000/ to see the results
+# Navigate to http://localhost:8000/
 ```
-> can lower `--max-eval-instances` but 10 replicates the VHELM leaderboard results for comparable results
----
 
-> [!warning] `flash-attn` Errors for no GPU
-> If no GPU and errors on `flash-attn`, then comment out
-> ```python
-> attn_implementation="flash_attention_2"
-> ```
-> in `helm/clients/vision_language/qwen2_vlm_client.py`
-> > Otherwise please also `flash-attn`
+**Note:** `local` and `finetunes` are defined in `prod_env`. Use the `run_all_ft_models.sh` helper script to run all finetuned versions.
 
 ---
-Inject these into crfm-helm, lost track of which ones were injected somewhere along the way while getting everything running.
-Recommend using `pipx` for python package management but use `pip` equivalent if desired:
+
+# Dependency Installation
 ```bash
 # Install helm
-pipx install crfm-helm
-pipx install "crfm-helm[vlm]"
+pip install crfm-helm
+pip install "crfm-helm[vlm]"
 
-# Core dependencies for VHELM
-pipx install torch
+# Core dependencies
+pip install torch
 
-# Vision and image processing
-pipx install opencv-python
-pipx install pillow
-pipx install scipy
-pipx install matplotlib
-pipx install seaborn
+# Vision & image processing
+pip install opencv-python pillow scipy matplotlib seaborn
 
-# Hugging Face and model dependencies
-pipx install transformers
-pipx install accelerate
-pipx install datasets
-pipx install tokenizers
+# Hugging Face & models
+pip install transformers accelerate datasets tokenizers
 
-# Qwen and special tokenizers
-pipx install tiktoken
-pipx install protobuf
+# Qwen & tokenizers
+pip install tiktoken protobuf
 
-# Additional utilities
-pipx install requests
-pipx install numpy
-pipx install pandas
-pipx install legacy-cgi
+# Utilities
+pip install requests numpy pandas legacy-cgi
 ```
 
----
-
+These dependencies and configurations need to be installed for VHELM to run.
