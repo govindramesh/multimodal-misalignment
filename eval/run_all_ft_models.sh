@@ -2,12 +2,12 @@
 
 CONF_PATH="./run_entries_vhelm.conf"
 SUITE="v1"
-MAX=3
+MAX=10
 
 MODELS=(
-  # "custom/qwen2.5-vl-3b-instruct-local"       # pulling from web
-  # "custom/qwen2.5-vl-3b-instruct-ft-05"
-  # "custom/qwen2.5-vl-3b-instruct-ft-10"
+  "custom/qwen2.5-vl-3b-instruct-local"       # pulling from web
+  "custom/qwen2.5-vl-3b-instruct-ft-05"
+  "custom/qwen2.5-vl-3b-instruct-ft-10"
   "custom/qwen2.5-vl-3b-instruct-ft-25"
   "custom/qwen2.5-vl-3b-instruct-ft-50"
   "custom/qwen2.5-vl-3b-instruct-ft-100"

@@ -1,0 +1,70 @@
+{
+  "title": "Fairness",
+  "header": [
+    {
+      "value": "Model",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperforms on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "VQAv2 (AAE) - PEM (Fairness)",
+      "description": "African-American English Perturbation + Open-ended questions about real-world images ([Goyal et al., 2017](https://arxiv.org/abs/1612.00837)).\n\nPrefix quasi-exact match: Fraction of instances that the predicted output matches the prefix of a correct reference up to light processing.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "PEM",
+        "run_group": "VQAv2 (AAE)",
+        "perturbation": "Fairness"
+      }
+    },
+    {
+      "value": "A-OKVQA (AAE) - PEM (Fairness)",
+      "description": "African-American English Perturbation + A-OKVQA ([Schwenk et al., 2022](https://arxiv.org/abs/2206.01718)).\n\nPrefix quasi-exact match: Fraction of instances that the predicted output matches the prefix of a correct reference up to light processing.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "PEM",
+        "run_group": "A-OKVQA (AAE)",
+        "perturbation": "Fairness"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-50%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "benchmark_output/runs/icl/groups/latex/core_scenarios_fairness.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "benchmark_output/runs/icl/groups/json/core_scenarios_fairness.json"
+    }
+  ],
+  "name": "fairness"
+}
