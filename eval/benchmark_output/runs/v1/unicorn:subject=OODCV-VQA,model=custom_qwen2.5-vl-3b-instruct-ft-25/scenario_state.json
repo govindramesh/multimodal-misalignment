@@ -1,0 +1,922 @@
+{
+  "adapter_spec": {
+    "method": "generation_multimodal",
+    "global_prefix": "",
+    "global_suffix": "",
+    "instructions": "Only give a yes/no or numerical answer without an explanation.",
+    "input_prefix": "",
+    "input_suffix": "",
+    "reference_prefix": "A. ",
+    "reference_suffix": "\n",
+    "chain_of_thought_prefix": "",
+    "chain_of_thought_suffix": "\n",
+    "output_prefix": "",
+    "output_suffix": "",
+    "instance_prefix": "\n",
+    "substitutions": [],
+    "max_train_instances": 0,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "num_trials": 1,
+    "sample_train": true,
+    "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-25",
+    "model": "custom/qwen2.5-vl-3b-instruct-ft-25",
+    "temperature": 0.0,
+    "max_tokens": 1,
+    "stop_sequences": [],
+    "multi_label": false
+  },
+  "request_states": [
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-1_images_bicycle_+_outspace_google_0029.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Is there a bicycle in the image?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id1465"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-25",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-25",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-1_images_bicycle_+_outspace_google_0029.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Is there a bicycle in the image?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "Yes",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "Yes",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.734240770339966,
+        "request_datetime": 1764551793
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-1_images_bicycle_+_fog_OR_foggy_OR_smog_google_0086.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "How many unicorns are there in the image?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id302"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-25",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-25",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-1_images_bicycle_+_fog_OR_foggy_OR_smog_google_0086.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "How many unicorns are there in the image?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "0",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "0",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.4649434089660645,
+        "request_datetime": 1764551793
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_655.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Is there a chair in the image?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id87"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-25",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-25",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_655.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Is there a chair in the image?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "Yes",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "Yes",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 1.2417817115783691,
+        "request_datetime": 1764551793
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_453.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "How many sofas are there in the image?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "1"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id843"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-25",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-25",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_453.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "How many sofas are there in the image?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "4",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "4",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 2.303654909133911,
+        "request_datetime": 1764551793
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-1_images_aeroplane_+_outspace_google_0125.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Is there an aeroplane in the image?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id1431"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-25",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-25",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-1_images_aeroplane_+_outspace_google_0125.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Is there an aeroplane in the image?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "Yes",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "Yes",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 2.4334747791290283,
+        "request_datetime": 1764551794
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_4255.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "How many chairs are there in the image?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "5"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id661"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-25",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-25",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_4255.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "How many chairs are there in the image?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "5",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "5",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 1.9641609191894531,
+        "request_datetime": 1764551795
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_328.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Is there a car in the image?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id868"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-25",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-25",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_328.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Is there a car in the image?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "Yes",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "Yes",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 1.4851906299591064,
+        "request_datetime": 1764551796
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_383.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "How many unicorns are there in the image?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id3921"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-25",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-25",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_383.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "How many unicorns are there in the image?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "0",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "0",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 1.4929752349853516,
+        "request_datetime": 1764551797
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_8409.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "How many buses are there in the image?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "1"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id72"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-25",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-25",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_8409.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "How many buses are there in the image?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "1",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "1",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.9225091934204102,
+        "request_datetime": 1764551797
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-1_images_train_+_fog_OR_foggy_OR_smog_google_0141.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "How many unicorns are there in the image?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id528"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-25",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-25",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-1_images_train_+_fog_OR_foggy_OR_smog_google_0141.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "How many unicorns are there in the image?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "0",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "0",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 1.2117159366607666,
+        "request_datetime": 1764551797
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    }
+  ]
+}

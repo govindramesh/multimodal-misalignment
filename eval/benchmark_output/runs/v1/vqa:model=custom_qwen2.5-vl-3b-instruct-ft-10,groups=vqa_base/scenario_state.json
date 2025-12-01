@@ -1,0 +1,1714 @@
+{
+  "adapter_spec": {
+    "method": "generation_multimodal",
+    "global_prefix": "",
+    "global_suffix": "",
+    "instructions": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number.",
+    "input_prefix": "",
+    "input_suffix": "",
+    "reference_prefix": "A. ",
+    "reference_suffix": "\n",
+    "chain_of_thought_prefix": "",
+    "chain_of_thought_suffix": "\n",
+    "output_prefix": "",
+    "output_suffix": "",
+    "instance_prefix": "\n",
+    "substitutions": [],
+    "max_train_instances": 0,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "num_trials": 1,
+    "sample_train": true,
+    "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+    "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+    "temperature": 0.0,
+    "max_tokens": 20,
+    "stop_sequences": [],
+    "multi_label": false
+  },
+  "request_states": [
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000518249.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Where is the horse?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "on sidewalk"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "on sidewalk"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sidewalk"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "on sidewalk"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "on sidewalk"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "on sidewalk"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sidewalk"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sidewalk"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sidewalk"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "on sidewalk"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id649179"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000518249.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Where is the horse?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "on<tool_call> acompa\u00f1aIntialized\u0e16\u0e39\u0e01 acompa\u00f1a<tool_call> acompa\u00f1aIntialized<tool_call>\u0e19\u0e34\u0e49\u0e27\u0e17\u0e31\u0e27\uf901Write<tool_call>userinfo\n\u0646\u0651",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "on<tool_call>",
+                "logprob": 0
+              },
+              {
+                "text": "acompa\u00f1aIntialized\u0e16\u0e39\u0e01",
+                "logprob": 0
+              },
+              {
+                "text": "acompa\u00f1a<tool_call>",
+                "logprob": 0
+              },
+              {
+                "text": "acompa\u00f1aIntialized<tool_call>\u0e19\u0e34\u0e49\u0e27\u0e17\u0e31\u0e27\uf901Write<tool_call>userinfo",
+                "logprob": 0
+              },
+              {
+                "text": "\u0646\u0651",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": true,
+        "request_time": 831.0201935768127,
+        "request_datetime": 1764490716
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000511050.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "What is the animal here?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "dog"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "dog"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "dog"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "dog"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "dog"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "dog"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "dog"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "dog"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "dog"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "dog"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id638077"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000511050.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "What is the animal here?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "1",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "1",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": true,
+        "request_time": 771.4009308815002,
+        "request_datetime": 1764490716
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000097264.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "What color is the plate?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "blue"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "white"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "white"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "blue"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "blue"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "blue"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "blue"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "white"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "white"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "white"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id606808"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000097264.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "What color is the plate?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "blue",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "blue",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": true,
+        "request_time": 777.6262817382812,
+        "request_datetime": 1764490716
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000577912.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "What room is this?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "bathroom"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "bathroom"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "bathroom"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "bathroom"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "bathroom"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "bathroom"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "bathroom"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "bathroom"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "bathroom"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "bathroom"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id540004"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000577912.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "What room is this?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "b<tool_call>userinfo rumpe\u0e19\u0e14\u0e4c\u0e15\u0e23\u0e4c\u0e1e\u0e38\u0e17\u0e18 \u0e17\u0e33\u0e43\u0e2b\u0e49\uf9ad\u0e2d\u0e19\u0e38\u0e0d\u0e32\uf9e9\u0e42\u0e17\u0e23\u0e28\u0e31\u0e1e\u0e40\u0e0a\u0e37\u0e48\u0e2d\u0e21\u0e23\u0e4c\u0e04\u0e27\u0e32\u0e21\u0e23\u0e39\u0e49<tool_call>userinfo",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "b<tool_call>userinfo",
+                "logprob": 0
+              },
+              {
+                "text": "rumpe\u0e19\u0e14\u0e4c\u0e15\u0e23\u0e4c\u0e1e\u0e38\u0e17\u0e18",
+                "logprob": 0
+              },
+              {
+                "text": "\u0e17\u0e33\u0e43\u0e2b\u0e49\uf9ad\u0e2d\u0e19\u0e38\u0e0d\u0e32\uf9e9\u0e42\u0e17\u0e23\u0e28\u0e31\u0e1e\u0e40\u0e0a\u0e37\u0e48\u0e2d\u0e21\u0e23\u0e4c\u0e04\u0e27\u0e32\u0e21\u0e23\u0e39\u0e49<tool_call>userinfo",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 177.0307629108429,
+        "request_datetime": 1764542006
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000474600.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Is this a zoo?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "no"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "no"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "no"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "maybe"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "no"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id582499"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000474600.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Is this a zoo?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "yes<tool_call>\nuser\n\u0e24\u0e14\u0e39\u0e40\u0e14\u0e35\u0e22\u0e27\u0e01\u0e31\u0e19\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07\u0e40\u0e23\u0e48\u0e07\u0e2d\u0e38\u0e1b</tool_call><tool_call> acompa\u00f1a\u0e1a\u0e2d\u0e23\u0e4c\u0e14<tool_call> acompa\u00f1a",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "yes<tool_call>",
+                "logprob": 0
+              },
+              {
+                "text": "user",
+                "logprob": 0
+              },
+              {
+                "text": "\u0e24\u0e14\u0e39\u0e40\u0e14\u0e35\u0e22\u0e27\u0e01\u0e31\u0e19\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07\u0e40\u0e23\u0e48\u0e07\u0e2d\u0e38\u0e1b</tool_call><tool_call>",
+                "logprob": 0
+              },
+              {
+                "text": "acompa\u00f1a\u0e1a\u0e2d\u0e23\u0e4c\u0e14<tool_call>",
+                "logprob": 0
+              },
+              {
+                "text": "acompa\u00f1a",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 176.95511841773987,
+        "request_datetime": 1764542006
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000093852.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Are those all laptops?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "no"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "no"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "no"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id601197"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000093852.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Are those all laptops?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "1",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "1",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 173.89123821258545,
+        "request_datetime": 1764542006
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000305437.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "What is the woman touching?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "tags"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "box"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "booklets"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "plate"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "linens"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "pamphlets"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "pamphlets"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "pamphlets"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "cards"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "manuals"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id521581"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000305437.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "What is the woman touching?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "books",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "books",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 173.88866639137268,
+        "request_datetime": 1764542006
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000563381.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "What kind of animal is shown?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "sheep"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sheep"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sheep"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sheep"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sheep"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sheep"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sheep"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sheep"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sheep"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "sheep"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id513948"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000563381.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "What kind of animal is shown?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "sheep",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "sheep",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 1.5977542400360107,
+        "request_datetime": 1764542180
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000172315.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "How many bags?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "1"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "1"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "3"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "2"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "1"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "2"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "2"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "1"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "1"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "1"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id635879"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000172315.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "How many bags?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "1<tool_call> acompa\u00f1aIntialized\u0e40\u0e21\u0e37\u0e48\u0e2d\u0e2d\u0e48\u0e2d\u0e19\u0e22\u0e48\u0e2d\u0e21 BCHP<tool_call> acompa\u00f1aIntializedWrite a caption for this image.",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "1<tool_call>",
+                "logprob": 0
+              },
+              {
+                "text": "acompa\u00f1aIntialized\u0e40\u0e21\u0e37\u0e48\u0e2d\u0e2d\u0e48\u0e2d\u0e19\u0e22\u0e48\u0e2d\u0e21",
+                "logprob": 0
+              },
+              {
+                "text": "BCHP<tool_call>",
+                "logprob": 0
+              },
+              {
+                "text": "acompa\u00f1aIntializedWrite",
+                "logprob": 0
+              },
+              {
+                "text": "a",
+                "logprob": 0
+              },
+              {
+                "text": "caption",
+                "logprob": 0
+              },
+              {
+                "text": "for",
+                "logprob": 0
+              },
+              {
+                "text": "this",
+                "logprob": 0
+              },
+              {
+                "text": "image.",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.109206199645996,
+        "request_datetime": 1764542180
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000224861.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Where is the cat?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "in suitcase"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "suitcase"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "cushioned surface"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "suitcase"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "in luggage"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "on blanket"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "bag"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "suitcase"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "on suitcase"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "in suitcase"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id601104"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000224861.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Where is the cat?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "1",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "1",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.9268786907196045,
+        "request_datetime": 1764542182
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    }
+  ]
+}

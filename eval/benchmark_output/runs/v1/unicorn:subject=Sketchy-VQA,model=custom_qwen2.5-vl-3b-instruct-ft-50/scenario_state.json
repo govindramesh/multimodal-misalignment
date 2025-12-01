@@ -1,0 +1,922 @@
+{
+  "adapter_spec": {
+    "method": "generation_multimodal",
+    "global_prefix": "",
+    "global_suffix": "",
+    "instructions": "Only give a yes/no or numerical answer without an explanation.",
+    "input_prefix": "",
+    "input_suffix": "",
+    "reference_prefix": "A. ",
+    "reference_suffix": "\n",
+    "chain_of_thought_prefix": "",
+    "chain_of_thought_suffix": "\n",
+    "output_prefix": "",
+    "output_suffix": "",
+    "instance_prefix": "\n",
+    "substitutions": [],
+    "max_train_instances": 0,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "num_trials": 1,
+    "sample_train": true,
+    "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-50",
+    "model": "custom/qwen2.5-vl-3b-instruct-ft-50",
+    "temperature": 0.0,
+    "max_tokens": 1,
+    "stop_sequences": [],
+    "multi_label": false
+  },
+  "request_states": [
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/png",
+                "location": "benchmark_output/scenarios/unicorn/sketch_cup_5123.png"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "In the scene, is a cup in it?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id2230"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-50",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-50",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/png",
+              "location": "benchmark_output/scenarios/unicorn/sketch_cup_5123.png"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "In the scene, is a cup in it?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "Yes",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "Yes",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.659322738647461,
+        "request_datetime": 1764554053
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/png",
+                "location": "benchmark_output/scenarios/unicorn/sketch_radio_13481.png"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Is this a radio in the image?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id668"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-50",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-50",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/png",
+              "location": "benchmark_output/scenarios/unicorn/sketch_radio_13481.png"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Is this a radio in the image?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "Yes",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "Yes",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 4.412045240402222,
+        "request_datetime": 1764554053
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/png",
+                "location": "benchmark_output/scenarios/unicorn/sketch_hat_8029.png"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "In the scene, is a hat in it?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id3616"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-50",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-50",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/png",
+              "location": "benchmark_output/scenarios/unicorn/sketch_hat_8029.png"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "In the scene, is a hat in it?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "Yes",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "Yes",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 4.583869695663452,
+        "request_datetime": 1764554053
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/png",
+                "location": "benchmark_output/scenarios/unicorn/sketch_satellite_14158.png"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Is there a sketchy snowman in the picture?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "No"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id2363"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-50",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-50",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/png",
+              "location": "benchmark_output/scenarios/unicorn/sketch_satellite_14158.png"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Is there a sketchy snowman in the picture?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "No",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "No",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.498255968093872,
+        "request_datetime": 1764554053
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/png",
+                "location": "benchmark_output/scenarios/unicorn/sketch_house_8877.png"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "In the scene, is a house in it?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id142"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-50",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-50",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/png",
+              "location": "benchmark_output/scenarios/unicorn/sketch_house_8877.png"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "In the scene, is a house in it?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "Yes",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "Yes",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 4.840580463409424,
+        "request_datetime": 1764554057
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/png",
+                "location": "benchmark_output/scenarios/unicorn/sketch_sun_16746.png"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Is this a sun in the image?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id538"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-50",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-50",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/png",
+              "location": "benchmark_output/scenarios/unicorn/sketch_sun_16746.png"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Is this a sun in the image?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "Yes",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "Yes",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.6281380653381348,
+        "request_datetime": 1764554057
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/png",
+                "location": "benchmark_output/scenarios/unicorn/sketch_fish_6596.png"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Is there a sketchy hamburger in the picture?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "No"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id1791"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-50",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-50",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/png",
+              "location": "benchmark_output/scenarios/unicorn/sketch_fish_6596.png"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Is there a sketchy hamburger in the picture?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "0",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "0",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.0596654415130615,
+        "request_datetime": 1764554058
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/png",
+                "location": "benchmark_output/scenarios/unicorn/sketch_hand_7893.png"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Is there a sketchy hand in the picture?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id410"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-50",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-50",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/png",
+              "location": "benchmark_output/scenarios/unicorn/sketch_hand_7893.png"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Is there a sketchy hand in the picture?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "Yes",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "Yes",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.934285879135132,
+        "request_datetime": 1764554058
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/png",
+                "location": "benchmark_output/scenarios/unicorn/sketch_bush_2738.png"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "In the scene, is a bush in it?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id1150"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-50",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-50",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/png",
+              "location": "benchmark_output/scenarios/unicorn/sketch_bush_2738.png"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "In the scene, is a bush in it?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "Yes",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "Yes",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 2.300974130630493,
+        "request_datetime": 1764554060
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/png",
+                "location": "benchmark_output/scenarios/unicorn/sketch_face_6274.png"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "In the scene, is a face in it?"
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Yes"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "test",
+        "id": "id1032"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-50",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-50",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Only give a yes/no or numerical answer without an explanation."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/png",
+              "location": "benchmark_output/scenarios/unicorn/sketch_face_6274.png"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "In the scene, is a face in it?"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "Yes",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "Yes",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 2.298269510269165,
+        "request_datetime": 1764554061
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    }
+  ]
+}
