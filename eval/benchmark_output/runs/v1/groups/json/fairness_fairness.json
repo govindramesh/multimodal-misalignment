@@ -44,7 +44,7 @@
         "markdown": false
       },
       {
-        "value": 0.25,
+        "value": 0.1875,
         "markdown": false
       },
       {
@@ -73,7 +73,7 @@
         "markdown": false
       },
       {
-        "value": 0.25,
+        "value": 0.1875,
         "markdown": false
       },
       {
@@ -102,15 +102,31 @@
         "markdown": false
       },
       {
+        "value": 0.75,
+        "style": {
+          "font-weight": "bold"
+        },
         "markdown": false
       },
       {
-        "description": "No matching runs",
-        "markdown": false
+        "value": 0.4,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "vqa:model=custom_qwen2.5-vl-3b-instruct-ft-100,data_augmentation=dialect_prob=1.0_source=SAE_target=AAVE,groups=vqa_dialect"
+        ]
       },
       {
-        "description": "No matching runs",
-        "markdown": false
+        "value": 0.8,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=0.8 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "run_spec_names": [
+          "a_okvqa:model=custom_qwen2.5-vl-3b-instruct-ft-100,data_augmentation=dialect_prob=1.0_source=SAE_target=AAVE,groups=a_okvqa_dialect"
+        ]
       }
     ],
     [
@@ -120,7 +136,7 @@
         "markdown": false
       },
       {
-        "value": 0.6666666666666666,
+        "value": 0.625,
         "markdown": false
       },
       {
@@ -151,7 +167,7 @@
         "markdown": false
       },
       {
-        "value": 0.8333333333333333,
+        "value": 0.75,
         "style": {
           "font-weight": "bold"
         },

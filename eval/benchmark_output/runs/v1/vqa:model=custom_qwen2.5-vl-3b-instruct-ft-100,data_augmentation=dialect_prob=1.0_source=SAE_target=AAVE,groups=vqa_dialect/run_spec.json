@@ -1,0 +1,103 @@
+{
+  "name": "vqa:model=custom_qwen2.5-vl-3b-instruct-ft-100,data_augmentation=dialect_prob=1.0_source=SAE_target=AAVE,groups=vqa_dialect",
+  "scenario_spec": {
+    "class_name": "helm.benchmark.scenarios.vision_language.vqa_scenario.VQAScenario",
+    "args": {}
+  },
+  "adapter_spec": {
+    "method": "generation_multimodal",
+    "global_prefix": "",
+    "global_suffix": "",
+    "instructions": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number.",
+    "input_prefix": "",
+    "input_suffix": "",
+    "reference_prefix": "A. ",
+    "reference_suffix": "\n",
+    "chain_of_thought_prefix": "",
+    "chain_of_thought_suffix": "\n",
+    "output_prefix": "",
+    "output_suffix": "",
+    "instance_prefix": "\n",
+    "substitutions": [],
+    "max_train_instances": 0,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "num_trials": 1,
+    "sample_train": true,
+    "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-100",
+    "model": "custom/qwen2.5-vl-3b-instruct-ft-100",
+    "temperature": 0.0,
+    "max_tokens": 20,
+    "stop_sequences": [],
+    "multi_label": false
+  },
+  "metric_specs": [
+    {
+      "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+      "args": {
+        "names": [
+          "exact_match",
+          "quasi_exact_match",
+          "prefix_exact_match",
+          "quasi_prefix_exact_match"
+        ]
+      }
+    },
+    {
+      "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+      "args": {}
+    },
+    {
+      "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+      "args": {}
+    },
+    {
+      "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+      "args": {
+        "names": [
+          "exact_match",
+          "quasi_exact_match",
+          "quasi_leave_articles_exact_match",
+          "f1_score",
+          "rouge_l",
+          "bleu_1",
+          "bleu_4",
+          "cider"
+        ]
+      }
+    },
+    {
+      "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+      "args": {}
+    },
+    {
+      "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+      "args": {}
+    }
+  ],
+  "data_augmenter_spec": {
+    "perturbation_specs": [
+      {
+        "class_name": "helm.benchmark.augmentations.dialect_perturbation.DialectPerturbation",
+        "args": {
+          "prob": 1.0,
+          "source_class": "SAE",
+          "target_class": "AAVE",
+          "mapping_file_path": null
+        }
+      }
+    ],
+    "should_augment_train_instances": false,
+    "should_include_original_train": true,
+    "should_skip_unchanged_train": true,
+    "should_augment_eval_instances": true,
+    "should_include_original_eval": true,
+    "should_skip_unchanged_eval": true,
+    "seeds_per_instance": 1
+  },
+  "groups": [
+    "vqa",
+    "vqa_dialect"
+  ]
+}
