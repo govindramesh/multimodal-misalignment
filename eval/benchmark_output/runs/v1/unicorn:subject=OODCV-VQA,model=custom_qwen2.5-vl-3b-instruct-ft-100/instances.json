@@ -1,0 +1,89 @@
+[
+  {
+    "input": {
+      "text": "",
+      "multimedia_content": {
+        "media_objects": [
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-1_images_bicycle_+_outspace_google_0029.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "Is there a bicycle in the image?"
+          }
+        ]
+      }
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Yes"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "test",
+    "id": "id1465"
+  },
+  {
+    "input": {
+      "text": "",
+      "multimedia_content": {
+        "media_objects": [
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-1_images_bicycle_+_fog_OR_foggy_OR_smog_google_0086.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "How many unicorns are there in the image?"
+          }
+        ]
+      }
+    },
+    "references": [
+      {
+        "output": {
+          "text": "0"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "test",
+    "id": "id302"
+  },
+  {
+    "input": {
+      "text": "",
+      "multimedia_content": {
+        "media_objects": [
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/unicorn/ood-cv_phase-2_images_655.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "Is there a chair in the image?"
+          }
+        ]
+      }
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Yes"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "test",
+    "id": "id87"
+  }
+]
