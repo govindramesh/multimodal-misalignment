@@ -134,12 +134,13 @@ class Qwen2VLMClient(CachingClient):
 
                 try:
                     # Try loading without flash attention first for local models
+                    # currently hardcoded for Qwen2.5-VL-3B-Instruct
                     model = model_class.from_pretrained(
-                        model_path,
+                        "Qwen/Qwen2.5-VL-3B-Instruct",
                         torch_dtype=torch.bfloat16,
                         device_map=self._device_map,
                         trust_remote_code=self._trust_remote_code,
-                        local_files_only=is_local_path,
+                        # local_files_only=is_local_path,
                     ).eval()
                 except Exception as e:
                     hlog(f"Failed to load with specific class, trying AutoModel... Error: {e}")
