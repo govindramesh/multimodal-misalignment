@@ -128,6 +128,8 @@ class Qwen2VLMClient(CachingClient):
                 )
 
                 hlog(f"Using model class: {model_class.__name__}")
+                model_path = os.path.abspath(model_path)
+                tokenizer_path = os.path.abspath(tokenizer_path)
                 is_local_path = os.path.exists(model_path)
 
                 try:
@@ -157,6 +159,7 @@ class Qwen2VLMClient(CachingClient):
                         tokenizer_path,
                         trust_remote_code=self._trust_remote_code,
                         local_files_only=is_local_path,
+                        use_fast=True,
                     )
                 except Exception as e:
                     hlog(f"Failed to load processor from {tokenizer_path}, trying model path... Error: {e}")
@@ -219,21 +222,29 @@ class Qwen2VLMClient(CachingClient):
                             messages, tokenize=False, add_generation_prompt=True
                         )
                         image_inputs, video_inputs = process_vision_info(messages)
-                        inputs = processor(     # type: ignore
+
+                        inputs = processor(
                             text=[text],
                             images=image_inputs,
                             videos=video_inputs,
                             padding=True,
                             return_tensors="pt",
-                        ).to(self._device)
+                        )
+
+                        inputs = {k: v.to(self._device) for k, v in inputs.items()}
 
                         with torch.no_grad():
                             generated_ids = model.generate(**inputs, **generation_args)
 
                         # Remove the input prefix from outputs.
-                        generated_ids_trimmed = [
-                            out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
-                        ]
+                        input_ids = inputs.get("input_ids", None)
+                        if input_ids is None:
+                            # No text prefix → no trimming needed
+                            generated_ids_trimmed = generated_ids
+                        else:
+                            generated_ids_trimmed = [
+                                out_ids[len(in_ids):] for in_ids, out_ids in zip(input_ids, generated_ids)
+                            ]
                         output_text = processor.batch_decode(   # type: ignore
                             generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
                         )
