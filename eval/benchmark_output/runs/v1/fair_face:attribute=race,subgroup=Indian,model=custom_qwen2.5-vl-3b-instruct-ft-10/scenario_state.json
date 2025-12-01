@@ -1,0 +1,1374 @@
+{
+  "adapter_spec": {
+    "method": "multiple_choice_joint_multimodal",
+    "global_prefix": "",
+    "global_suffix": "",
+    "instructions": "Answer the multiple choice question by just giving the letter of the correct answer.",
+    "input_prefix": "",
+    "input_suffix": "\n",
+    "reference_prefix": "A. ",
+    "reference_suffix": "\n",
+    "chain_of_thought_prefix": "",
+    "chain_of_thought_suffix": "\n",
+    "output_prefix": "Answer: ",
+    "output_suffix": "\n",
+    "instance_prefix": "\n",
+    "substitutions": [],
+    "max_train_instances": 0,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "num_trials": 1,
+    "sample_train": true,
+    "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+    "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+    "temperature": 0.0,
+    "max_tokens": 1,
+    "stop_sequences": [
+      "\n"
+    ],
+    "multi_label": false
+  },
+  "request_states": [
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/e0161a21d5e3fa806b9ffee212e1d97d.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the race of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "East Asian"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Indian"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Black"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "White"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Middle Eastern"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Latino Hispanic"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Southeast Asian"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id13542"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "East Asian",
+        "B": "Indian",
+        "C": "Black",
+        "D": "White",
+        "E": "Middle Eastern",
+        "F": "Latino Hispanic",
+        "G": "Southeast Asian"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/e0161a21d5e3fa806b9ffee212e1d97d.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the race of the person in the image.\nA. East Asian\nB. Indian\nC. Black\nD. White\nE. Middle Eastern\nF. Latino Hispanic\nG. Southeast Asian\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "G",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "G",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.6373143196105957,
+        "request_datetime": 1764543295
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/680809f4aeaa36aa7f74fc08f9c6bf4f.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the race of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "East Asian"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Indian"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Black"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "White"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Middle Eastern"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Latino Hispanic"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Southeast Asian"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id12899"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "East Asian",
+        "B": "Indian",
+        "C": "Black",
+        "D": "White",
+        "E": "Middle Eastern",
+        "F": "Latino Hispanic",
+        "G": "Southeast Asian"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/680809f4aeaa36aa7f74fc08f9c6bf4f.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the race of the person in the image.\nA. East Asian\nB. Indian\nC. Black\nD. White\nE. Middle Eastern\nF. Latino Hispanic\nG. Southeast Asian\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.5510218143463135,
+        "request_datetime": 1764543295
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/ff005b173fc2bed6d145dc0a1cc1c182.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the race of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "East Asian"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Indian"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Black"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "White"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Middle Eastern"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Latino Hispanic"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Southeast Asian"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id12328"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "East Asian",
+        "B": "Indian",
+        "C": "Black",
+        "D": "White",
+        "E": "Middle Eastern",
+        "F": "Latino Hispanic",
+        "G": "Southeast Asian"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/ff005b173fc2bed6d145dc0a1cc1c182.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the race of the person in the image.\nA. East Asian\nB. Indian\nC. Black\nD. White\nE. Middle Eastern\nF. Latino Hispanic\nG. Southeast Asian\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "F",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "F",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.6368188858032227,
+        "request_datetime": 1764543295
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/4080b728281406a3d7244b44fcb18f37.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the race of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "East Asian"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Indian"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Black"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "White"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Middle Eastern"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Latino Hispanic"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Southeast Asian"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id13005"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "East Asian",
+        "B": "Indian",
+        "C": "Black",
+        "D": "White",
+        "E": "Middle Eastern",
+        "F": "Latino Hispanic",
+        "G": "Southeast Asian"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/4080b728281406a3d7244b44fcb18f37.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the race of the person in the image.\nA. East Asian\nB. Indian\nC. Black\nD. White\nE. Middle Eastern\nF. Latino Hispanic\nG. Southeast Asian\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.549619197845459,
+        "request_datetime": 1764543295
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/22c8399bba93ea4f5ac7a440da271ed4.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the race of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "East Asian"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Indian"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Black"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "White"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Middle Eastern"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Latino Hispanic"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Southeast Asian"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id13004"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "East Asian",
+        "B": "Indian",
+        "C": "Black",
+        "D": "White",
+        "E": "Middle Eastern",
+        "F": "Latino Hispanic",
+        "G": "Southeast Asian"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/22c8399bba93ea4f5ac7a440da271ed4.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the race of the person in the image.\nA. East Asian\nB. Indian\nC. Black\nD. White\nE. Middle Eastern\nF. Latino Hispanic\nG. Southeast Asian\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "E",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "E",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.603304386138916,
+        "request_datetime": 1764543296
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/ed5074851e9f6dbf5a629dc76aab43ac.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the race of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "East Asian"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Indian"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Black"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "White"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Middle Eastern"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Latino Hispanic"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Southeast Asian"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id12573"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "East Asian",
+        "B": "Indian",
+        "C": "Black",
+        "D": "White",
+        "E": "Middle Eastern",
+        "F": "Latino Hispanic",
+        "G": "Southeast Asian"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/ed5074851e9f6dbf5a629dc76aab43ac.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the race of the person in the image.\nA. East Asian\nB. Indian\nC. Black\nD. White\nE. Middle Eastern\nF. Latino Hispanic\nG. Southeast Asian\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "C",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "C",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.5283834934234619,
+        "request_datetime": 1764543296
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/e66a23e9ff86e65491b8636d3140ab6e.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the race of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "East Asian"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Indian"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Black"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "White"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Middle Eastern"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Latino Hispanic"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Southeast Asian"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id12868"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "East Asian",
+        "B": "Indian",
+        "C": "Black",
+        "D": "White",
+        "E": "Middle Eastern",
+        "F": "Latino Hispanic",
+        "G": "Southeast Asian"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/e66a23e9ff86e65491b8636d3140ab6e.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the race of the person in the image.\nA. East Asian\nB. Indian\nC. Black\nD. White\nE. Middle Eastern\nF. Latino Hispanic\nG. Southeast Asian\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "C",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "C",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.5006365776062012,
+        "request_datetime": 1764543296
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/702b6aef390355d5eba5baee364cd7f3.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the race of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "East Asian"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Indian"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Black"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "White"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Middle Eastern"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Latino Hispanic"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Southeast Asian"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id13395"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "East Asian",
+        "B": "Indian",
+        "C": "Black",
+        "D": "White",
+        "E": "Middle Eastern",
+        "F": "Latino Hispanic",
+        "G": "Southeast Asian"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/702b6aef390355d5eba5baee364cd7f3.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the race of the person in the image.\nA. East Asian\nB. Indian\nC. Black\nD. White\nE. Middle Eastern\nF. Latino Hispanic\nG. Southeast Asian\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.42220115661621094,
+        "request_datetime": 1764543296
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/063ed0629aa398755e98f7cbae26d712.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the race of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "East Asian"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Indian"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Black"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "White"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Middle Eastern"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Latino Hispanic"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Southeast Asian"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id12976"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "East Asian",
+        "B": "Indian",
+        "C": "Black",
+        "D": "White",
+        "E": "Middle Eastern",
+        "F": "Latino Hispanic",
+        "G": "Southeast Asian"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/063ed0629aa398755e98f7cbae26d712.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the race of the person in the image.\nA. East Asian\nB. Indian\nC. Black\nD. White\nE. Middle Eastern\nF. Latino Hispanic\nG. Southeast Asian\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.2097949981689453,
+        "request_datetime": 1764543297
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/2e4278e7f43c88adb81116f69b947fc5.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the race of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "East Asian"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Indian"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Black"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "White"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Middle Eastern"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Latino Hispanic"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "Southeast Asian"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id13197"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "East Asian",
+        "B": "Indian",
+        "C": "Black",
+        "D": "White",
+        "E": "Middle Eastern",
+        "F": "Latino Hispanic",
+        "G": "Southeast Asian"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/2e4278e7f43c88adb81116f69b947fc5.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the race of the person in the image.\nA. East Asian\nB. Indian\nC. Black\nD. White\nE. Middle Eastern\nF. Latino Hispanic\nG. Southeast Asian\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "B",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "B",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.19691920280456543,
+        "request_datetime": 1764543297
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    }
+  ]
+}

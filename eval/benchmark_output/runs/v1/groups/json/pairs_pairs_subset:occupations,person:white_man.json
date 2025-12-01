@@ -1,0 +1,319 @@
+{
+  "title": "subset: occupations, person: white_man",
+  "header": [
+    {
+      "value": "Model",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "PEM",
+      "description": "Examining gender and racial bias using parallel images ([Fraser et al., 2024](https://arxiv.org/abs/2402.05779)).\n\nPrefix quasi-exact match: Fraction of instances that the predicted output matches the prefix of a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "PEM",
+        "run_group": "PAIRS"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "Examining gender and racial bias using parallel images ([Fraser et al., 2024](https://arxiv.org/abs/2402.05779)).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "PAIRS"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "Examining gender and racial bias using parallel images ([Fraser et al., 2024](https://arxiv.org/abs/2402.05779)).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "PAIRS"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "Examining gender and racial bias using parallel images ([Fraser et al., 2024](https://arxiv.org/abs/2402.05779)).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "PAIRS"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "Examining gender and racial bias using parallel images ([Fraser et al., 2024](https://arxiv.org/abs/2402.05779)).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "PAIRS"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "Examining gender and racial bias using parallel images ([Fraser et al., 2024](https://arxiv.org/abs/2402.05779)).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "PAIRS"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-05%",
+        "description": "",
+        "href": "?group=pairs&subgroup=subset%3A%20occupations%2C%20person%3A%20white_man&runSpecs=%5B%22pairs%3Asubset%3Doccupations%2Cperson%3Dwhite_man%2Cmodel%3Dcustom_qwen2.5-vl-3b-instruct-ft-05%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "pairs:subset=occupations,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-05"
+        ]
+      },
+      {
+        "value": 0.4,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 41.7,
+        "description": "min=41.7, mean=41.7, max=41.7, sum=41.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-10%",
+        "description": "",
+        "href": "?group=pairs&subgroup=subset%3A%20occupations%2C%20person%3A%20white_man&runSpecs=%5B%22pairs%3Asubset%3Doccupations%2Cperson%3Dwhite_man%2Cmodel%3Dcustom_qwen2.5-vl-3b-instruct-ft-10%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "pairs:subset=occupations,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-10"
+        ]
+      },
+      {
+        "value": 0.2,
+        "description": "min=0.2, mean=0.2, max=0.2, sum=0.2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 41.7,
+        "description": "min=41.7, mean=41.7, max=41.7, sum=41.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-100%",
+        "description": "",
+        "href": "?group=pairs&subgroup=subset%3A%20occupations%2C%20person%3A%20white_man&runSpecs=%5B%22pairs%3Asubset%3Doccupations%2Cperson%3Dwhite_man%2Cmodel%3Dcustom_qwen2.5-vl-3b-instruct-ft-100%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "pairs:subset=occupations,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-100"
+        ]
+      },
+      {
+        "value": 0.1,
+        "description": "min=0.1, mean=0.1, max=0.1, sum=0.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 41.7,
+        "description": "min=41.7, mean=41.7, max=41.7, sum=41.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-25%",
+        "description": "",
+        "href": "?group=pairs&subgroup=subset%3A%20occupations%2C%20person%3A%20white_man&runSpecs=%5B%22pairs%3Asubset%3Doccupations%2Cperson%3Dwhite_man%2Cmodel%3Dcustom_qwen2.5-vl-3b-instruct-ft-25%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "pairs:subset=occupations,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-25"
+        ]
+      },
+      {
+        "value": 0.2,
+        "description": "min=0.2, mean=0.2, max=0.2, sum=0.2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 41.7,
+        "description": "min=41.7, mean=41.7, max=41.7, sum=41.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-50%",
+        "description": "",
+        "href": "?group=pairs&subgroup=subset%3A%20occupations%2C%20person%3A%20white_man&runSpecs=%5B%22pairs%3Asubset%3Doccupations%2Cperson%3Dwhite_man%2Cmodel%3Dcustom_qwen2.5-vl-3b-instruct-ft-50%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "pairs:subset=occupations,person=white_man,model=custom_qwen2.5-vl-3b-instruct-ft-50"
+        ]
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.3, mean=0.3, max=0.3, sum=0.3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 41.7,
+        "description": "min=41.7, mean=41.7, max=41.7, sum=41.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "compare all",
+      "href": "?group=pairs&subgroup=subset%3A%20occupations%2C%20person%3A%20white_man&runSpecs=%5B%22pairs%3Asubset%3Doccupations%2Cperson%3Dwhite_man%2Cmodel%3Dcustom_qwen2.5-vl-3b-instruct-ft-05%22%2C%20%22pairs%3Asubset%3Doccupations%2Cperson%3Dwhite_man%2Cmodel%3Dcustom_qwen2.5-vl-3b-instruct-ft-10%22%2C%20%22pairs%3Asubset%3Doccupations%2Cperson%3Dwhite_man%2Cmodel%3Dcustom_qwen2.5-vl-3b-instruct-ft-100%22%2C%20%22pairs%3Asubset%3Doccupations%2Cperson%3Dwhite_man%2Cmodel%3Dcustom_qwen2.5-vl-3b-instruct-ft-25%22%2C%20%22pairs%3Asubset%3Doccupations%2Cperson%3Dwhite_man%2Cmodel%3Dcustom_qwen2.5-vl-3b-instruct-ft-50%22%5D"
+    },
+    {
+      "text": "LaTeX",
+      "href": "benchmark_output/runs/v1/groups/latex/pairs_pairs_subset:occupations,person:white_man.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "benchmark_output/runs/v1/groups/json/pairs_pairs_subset:occupations,person:white_man.json"
+    }
+  ],
+  "name": "pairs_subset:occupations,person:white_man"
+}

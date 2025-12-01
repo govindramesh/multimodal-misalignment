@@ -1,0 +1,1100 @@
+{
+  "title": "General information",
+  "header": [
+    {
+      "value": "Model",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperforms on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "VQAv2 - # eval",
+      "description": "Open-ended questions about real-world images ([Goyal et al., 2017](https://arxiv.org/abs/1612.00837)).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "VQAv2"
+      }
+    },
+    {
+      "value": "VQAv2 - # train",
+      "description": "Open-ended questions about real-world images ([Goyal et al., 2017](https://arxiv.org/abs/1612.00837)).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "VQAv2"
+      }
+    },
+    {
+      "value": "VQAv2 - truncated",
+      "description": "Open-ended questions about real-world images ([Goyal et al., 2017](https://arxiv.org/abs/1612.00837)).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "VQAv2"
+      }
+    },
+    {
+      "value": "VQAv2 - # prompt tokens",
+      "description": "Open-ended questions about real-world images ([Goyal et al., 2017](https://arxiv.org/abs/1612.00837)).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "VQAv2"
+      }
+    },
+    {
+      "value": "VQAv2 - # output tokens",
+      "description": "Open-ended questions about real-world images ([Goyal et al., 2017](https://arxiv.org/abs/1612.00837)).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "VQAv2"
+      }
+    },
+    {
+      "value": "VizWiz - # eval",
+      "description": "A benchmark for visual question answering with images and questions created by visually impaired people ([Gurari et al., 2018](https://arxiv.org/abs/1802.08218)).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "VizWiz"
+      }
+    },
+    {
+      "value": "VizWiz - # train",
+      "description": "A benchmark for visual question answering with images and questions created by visually impaired people ([Gurari et al., 2018](https://arxiv.org/abs/1802.08218)).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "VizWiz"
+      }
+    },
+    {
+      "value": "VizWiz - truncated",
+      "description": "A benchmark for visual question answering with images and questions created by visually impaired people ([Gurari et al., 2018](https://arxiv.org/abs/1802.08218)).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "VizWiz"
+      }
+    },
+    {
+      "value": "VizWiz - # prompt tokens",
+      "description": "A benchmark for visual question answering with images and questions created by visually impaired people ([Gurari et al., 2018](https://arxiv.org/abs/1802.08218)).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "VizWiz"
+      }
+    },
+    {
+      "value": "VizWiz - # output tokens",
+      "description": "A benchmark for visual question answering with images and questions created by visually impaired people ([Gurari et al., 2018](https://arxiv.org/abs/1802.08218)).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "VizWiz"
+      }
+    },
+    {
+      "value": "Flickr30k - # eval",
+      "description": "An image caption corpus consisting of 158,915 crowd-sourced captions describing 31,783 Flickr images. ([Young et al., 2014](https://shannon.cs.illinois.edu/DenotationGraph/TACLDenotationGraph.pdf))\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "Flickr30k"
+      }
+    },
+    {
+      "value": "Flickr30k - # train",
+      "description": "An image caption corpus consisting of 158,915 crowd-sourced captions describing 31,783 Flickr images. ([Young et al., 2014](https://shannon.cs.illinois.edu/DenotationGraph/TACLDenotationGraph.pdf))\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "Flickr30k"
+      }
+    },
+    {
+      "value": "Flickr30k - truncated",
+      "description": "An image caption corpus consisting of 158,915 crowd-sourced captions describing 31,783 Flickr images. ([Young et al., 2014](https://shannon.cs.illinois.edu/DenotationGraph/TACLDenotationGraph.pdf))\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "Flickr30k"
+      }
+    },
+    {
+      "value": "Flickr30k - # prompt tokens",
+      "description": "An image caption corpus consisting of 158,915 crowd-sourced captions describing 31,783 Flickr images. ([Young et al., 2014](https://shannon.cs.illinois.edu/DenotationGraph/TACLDenotationGraph.pdf))\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "Flickr30k"
+      }
+    },
+    {
+      "value": "Flickr30k - # output tokens",
+      "description": "An image caption corpus consisting of 158,915 crowd-sourced captions describing 31,783 Flickr images. ([Young et al., 2014](https://shannon.cs.illinois.edu/DenotationGraph/TACLDenotationGraph.pdf))\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "Flickr30k"
+      }
+    },
+    {
+      "value": "POPE - # eval",
+      "description": "Open-ended questions about object appearance in real-world images for evaluating hallucination behaviour ([Li et al., 2023](https://aclanthology.org/2023.emnlp-main.20)).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "POPE"
+      }
+    },
+    {
+      "value": "POPE - # train",
+      "description": "Open-ended questions about object appearance in real-world images for evaluating hallucination behaviour ([Li et al., 2023](https://aclanthology.org/2023.emnlp-main.20)).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "POPE"
+      }
+    },
+    {
+      "value": "POPE - truncated",
+      "description": "Open-ended questions about object appearance in real-world images for evaluating hallucination behaviour ([Li et al., 2023](https://aclanthology.org/2023.emnlp-main.20)).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "POPE"
+      }
+    },
+    {
+      "value": "POPE - # prompt tokens",
+      "description": "Open-ended questions about object appearance in real-world images for evaluating hallucination behaviour ([Li et al., 2023](https://aclanthology.org/2023.emnlp-main.20)).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "POPE"
+      }
+    },
+    {
+      "value": "POPE - # output tokens",
+      "description": "Open-ended questions about object appearance in real-world images for evaluating hallucination behaviour ([Li et al., 2023](https://aclanthology.org/2023.emnlp-main.20)).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "POPE"
+      }
+    },
+    {
+      "value": "MM-Star (Perception subsets) - # eval",
+      "description": "MM-STAR is an elite vision-indispensable multi-modal benchmark comprising 1,500 challenge samples meticulously selected by humans. ([Chen et al., 2024](https://arxiv.org/abs/2403.20330)).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "MM-Star (Perception subsets)"
+      }
+    },
+    {
+      "value": "MM-Star (Perception subsets) - # train",
+      "description": "MM-STAR is an elite vision-indispensable multi-modal benchmark comprising 1,500 challenge samples meticulously selected by humans. ([Chen et al., 2024](https://arxiv.org/abs/2403.20330)).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "MM-Star (Perception subsets)"
+      }
+    },
+    {
+      "value": "MM-Star (Perception subsets) - truncated",
+      "description": "MM-STAR is an elite vision-indispensable multi-modal benchmark comprising 1,500 challenge samples meticulously selected by humans. ([Chen et al., 2024](https://arxiv.org/abs/2403.20330)).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "MM-Star (Perception subsets)"
+      }
+    },
+    {
+      "value": "MM-Star (Perception subsets) - # prompt tokens",
+      "description": "MM-STAR is an elite vision-indispensable multi-modal benchmark comprising 1,500 challenge samples meticulously selected by humans. ([Chen et al., 2024](https://arxiv.org/abs/2403.20330)).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "MM-Star (Perception subsets)"
+      }
+    },
+    {
+      "value": "MM-Star (Perception subsets) - # output tokens",
+      "description": "MM-STAR is an elite vision-indispensable multi-modal benchmark comprising 1,500 challenge samples meticulously selected by humans. ([Chen et al., 2024](https://arxiv.org/abs/2403.20330)).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "MM-Star (Perception subsets)"
+      }
+    },
+    {
+      "value": "BLINK (Perception subsets) - # eval",
+      "description": "BLINK is a benchmark containing 14 visual perception tasks that can be solved by humans within a blink, but difficulty for VLMs. ([Fu, 2024](https://arxiv.org/abs/2404.12390)).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "BLINK (Perception subsets)"
+      }
+    },
+    {
+      "value": "BLINK (Perception subsets) - # train",
+      "description": "BLINK is a benchmark containing 14 visual perception tasks that can be solved by humans within a blink, but difficulty for VLMs. ([Fu, 2024](https://arxiv.org/abs/2404.12390)).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "BLINK (Perception subsets)"
+      }
+    },
+    {
+      "value": "BLINK (Perception subsets) - truncated",
+      "description": "BLINK is a benchmark containing 14 visual perception tasks that can be solved by humans within a blink, but difficulty for VLMs. ([Fu, 2024](https://arxiv.org/abs/2404.12390)).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "BLINK (Perception subsets)"
+      }
+    },
+    {
+      "value": "BLINK (Perception subsets) - # prompt tokens",
+      "description": "BLINK is a benchmark containing 14 visual perception tasks that can be solved by humans within a blink, but difficulty for VLMs. ([Fu, 2024](https://arxiv.org/abs/2404.12390)).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "BLINK (Perception subsets)"
+      }
+    },
+    {
+      "value": "BLINK (Perception subsets) - # output tokens",
+      "description": "BLINK is a benchmark containing 14 visual perception tasks that can be solved by humans within a blink, but difficulty for VLMs. ([Fu, 2024](https://arxiv.org/abs/2404.12390)).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "BLINK (Perception subsets)"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-05%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-05"
+        ]
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-05"
+        ]
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-05"
+        ]
+      },
+      {
+        "value": 33.7,
+        "description": "min=33.7, mean=33.7, max=33.7, sum=33.7 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-05"
+        ]
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-05"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-10%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=20 (2)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "vqa:model=custom_qwen2.5-vl-3b-instruct-ft-10,groups=vqa_base"
+        ]
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "vqa:model=custom_qwen2.5-vl-3b-instruct-ft-10,groups=vqa_base"
+        ]
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "vqa:model=custom_qwen2.5-vl-3b-instruct-ft-10,groups=vqa_base"
+        ]
+      },
+      {
+        "value": 44.4,
+        "description": "min=44.4, mean=44.4, max=44.4, sum=88.8 (2)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "vqa:model=custom_qwen2.5-vl-3b-instruct-ft-10,groups=vqa_base"
+        ]
+      },
+      {
+        "value": 2.8,
+        "description": "min=2.8, mean=2.8, max=2.8, sum=5.6 (2)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "vqa:model=custom_qwen2.5-vl-3b-instruct-ft-10,groups=vqa_base"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-10"
+        ]
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-10"
+        ]
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-10"
+        ]
+      },
+      {
+        "value": 33.7,
+        "description": "min=33.7, mean=33.7, max=33.7, sum=33.7 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-10"
+        ]
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-10"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-100%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-100"
+        ]
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-100"
+        ]
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-100"
+        ]
+      },
+      {
+        "value": 33.7,
+        "description": "min=33.7, mean=33.7, max=33.7, sum=33.7 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-100"
+        ]
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-100"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-25%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-25"
+        ]
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-25"
+        ]
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-25"
+        ]
+      },
+      {
+        "value": 33.7,
+        "description": "min=33.7, mean=33.7, max=33.7, sum=33.7 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-25"
+        ]
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-25"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Qwen2.5-VL-3B-Instruct-FT-50%",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-50"
+        ]
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-50"
+        ]
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-50"
+        ]
+      },
+      {
+        "value": 33.7,
+        "description": "min=33.7, mean=33.7, max=33.7, sum=33.7 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-50"
+        ]
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false,
+        "run_spec_names": [
+          "pope:model=custom_qwen2.5-vl-3b-instruct-ft-50"
+        ]
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "benchmark_output/runs/v1/groups/latex/visual_perception_general_information.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "benchmark_output/runs/v1/groups/json/visual_perception_general_information.json"
+    }
+  ],
+  "name": "general_information"
+}

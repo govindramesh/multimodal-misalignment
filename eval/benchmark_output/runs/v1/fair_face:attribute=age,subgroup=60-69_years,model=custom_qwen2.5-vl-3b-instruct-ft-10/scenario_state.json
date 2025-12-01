@@ -1,0 +1,1514 @@
+{
+  "adapter_spec": {
+    "method": "multiple_choice_joint_multimodal",
+    "global_prefix": "",
+    "global_suffix": "",
+    "instructions": "Answer the multiple choice question by just giving the letter of the correct answer.",
+    "input_prefix": "",
+    "input_suffix": "\n",
+    "reference_prefix": "A. ",
+    "reference_suffix": "\n",
+    "chain_of_thought_prefix": "",
+    "chain_of_thought_suffix": "\n",
+    "output_prefix": "Answer: ",
+    "output_suffix": "\n",
+    "instance_prefix": "\n",
+    "substitutions": [],
+    "max_train_instances": 0,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "num_trials": 1,
+    "sample_train": true,
+    "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+    "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+    "temperature": 0.0,
+    "max_tokens": 1,
+    "stop_sequences": [
+      "\n"
+    ],
+    "multi_label": false
+  },
+  "request_states": [
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/19ca771dfefd73f665cd5850714b6aec.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the age of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0-2 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "3-9 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "10-19 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "20-29 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "30-39 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "40-49 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "50-59 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "60-69 years"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Over 70 years"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id2960"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "0-2 years",
+        "B": "3-9 years",
+        "C": "10-19 years",
+        "D": "20-29 years",
+        "E": "30-39 years",
+        "F": "40-49 years",
+        "G": "50-59 years",
+        "H": "60-69 years",
+        "I": "Over 70 years"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/19ca771dfefd73f665cd5850714b6aec.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the age of the person in the image.\nA. 0-2 years\nB. 3-9 years\nC. 10-19 years\nD. 20-29 years\nE. 30-39 years\nF. 40-49 years\nG. 50-59 years\nH. 60-69 years\nI. Over 70 years\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "G",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "G",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.607764482498169,
+        "request_datetime": 1764545596
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/e534ae7843d7ca85810a413be948ee95.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the age of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0-2 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "3-9 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "10-19 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "20-29 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "30-39 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "40-49 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "50-59 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "60-69 years"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Over 70 years"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id3037"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "0-2 years",
+        "B": "3-9 years",
+        "C": "10-19 years",
+        "D": "20-29 years",
+        "E": "30-39 years",
+        "F": "40-49 years",
+        "G": "50-59 years",
+        "H": "60-69 years",
+        "I": "Over 70 years"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/e534ae7843d7ca85810a413be948ee95.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the age of the person in the image.\nA. 0-2 years\nB. 3-9 years\nC. 10-19 years\nD. 20-29 years\nE. 30-39 years\nF. 40-49 years\nG. 50-59 years\nH. 60-69 years\nI. Over 70 years\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "H",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "H",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.6091127395629883,
+        "request_datetime": 1764545596
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/6cd06464c29a053c9a037ec33ac763ee.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the age of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0-2 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "3-9 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "10-19 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "20-29 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "30-39 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "40-49 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "50-59 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "60-69 years"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Over 70 years"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id2794"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "0-2 years",
+        "B": "3-9 years",
+        "C": "10-19 years",
+        "D": "20-29 years",
+        "E": "30-39 years",
+        "F": "40-49 years",
+        "G": "50-59 years",
+        "H": "60-69 years",
+        "I": "Over 70 years"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/6cd06464c29a053c9a037ec33ac763ee.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the age of the person in the image.\nA. 0-2 years\nB. 3-9 years\nC. 10-19 years\nD. 20-29 years\nE. 30-39 years\nF. 40-49 years\nG. 50-59 years\nH. 60-69 years\nI. Over 70 years\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "I",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "I",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.6075465679168701,
+        "request_datetime": 1764545596
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/6228bc746586cb1b3c88e205d09239ae.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the age of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0-2 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "3-9 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "10-19 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "20-29 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "30-39 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "40-49 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "50-59 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "60-69 years"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Over 70 years"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id2844"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "0-2 years",
+        "B": "3-9 years",
+        "C": "10-19 years",
+        "D": "20-29 years",
+        "E": "30-39 years",
+        "F": "40-49 years",
+        "G": "50-59 years",
+        "H": "60-69 years",
+        "I": "Over 70 years"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/6228bc746586cb1b3c88e205d09239ae.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the age of the person in the image.\nA. 0-2 years\nB. 3-9 years\nC. 10-19 years\nD. 20-29 years\nE. 30-39 years\nF. 40-49 years\nG. 50-59 years\nH. 60-69 years\nI. Over 70 years\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "I",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "I",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.6545524597167969,
+        "request_datetime": 1764545596
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/a78d4a9a7021a12cbf93a94a1d3d0ec5.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the age of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0-2 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "3-9 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "10-19 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "20-29 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "30-39 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "40-49 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "50-59 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "60-69 years"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Over 70 years"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id2995"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "0-2 years",
+        "B": "3-9 years",
+        "C": "10-19 years",
+        "D": "20-29 years",
+        "E": "30-39 years",
+        "F": "40-49 years",
+        "G": "50-59 years",
+        "H": "60-69 years",
+        "I": "Over 70 years"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/a78d4a9a7021a12cbf93a94a1d3d0ec5.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the age of the person in the image.\nA. 0-2 years\nB. 3-9 years\nC. 10-19 years\nD. 20-29 years\nE. 30-39 years\nF. 40-49 years\nG. 50-59 years\nH. 60-69 years\nI. Over 70 years\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "G",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "G",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.39441585540771484,
+        "request_datetime": 1764545596
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/e3545d27254b76776beb1d93ad85d9d7.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the age of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0-2 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "3-9 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "10-19 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "20-29 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "30-39 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "40-49 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "50-59 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "60-69 years"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Over 70 years"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id2842"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "0-2 years",
+        "B": "3-9 years",
+        "C": "10-19 years",
+        "D": "20-29 years",
+        "E": "30-39 years",
+        "F": "40-49 years",
+        "G": "50-59 years",
+        "H": "60-69 years",
+        "I": "Over 70 years"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/e3545d27254b76776beb1d93ad85d9d7.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the age of the person in the image.\nA. 0-2 years\nB. 3-9 years\nC. 10-19 years\nD. 20-29 years\nE. 30-39 years\nF. 40-49 years\nG. 50-59 years\nH. 60-69 years\nI. Over 70 years\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "H",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "H",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.5531866550445557,
+        "request_datetime": 1764545596
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/0c53672cb13e5968346287a2bfd83ed1.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the age of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0-2 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "3-9 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "10-19 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "20-29 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "30-39 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "40-49 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "50-59 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "60-69 years"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Over 70 years"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id3019"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "0-2 years",
+        "B": "3-9 years",
+        "C": "10-19 years",
+        "D": "20-29 years",
+        "E": "30-39 years",
+        "F": "40-49 years",
+        "G": "50-59 years",
+        "H": "60-69 years",
+        "I": "Over 70 years"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/0c53672cb13e5968346287a2bfd83ed1.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the age of the person in the image.\nA. 0-2 years\nB. 3-9 years\nC. 10-19 years\nD. 20-29 years\nE. 30-39 years\nF. 40-49 years\nG. 50-59 years\nH. 60-69 years\nI. Over 70 years\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "G",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "G",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.5166809558868408,
+        "request_datetime": 1764545596
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/e535f8adcc148436f3b9a08fb3a281fc.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the age of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0-2 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "3-9 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "10-19 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "20-29 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "30-39 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "40-49 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "50-59 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "60-69 years"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Over 70 years"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id3007"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "0-2 years",
+        "B": "3-9 years",
+        "C": "10-19 years",
+        "D": "20-29 years",
+        "E": "30-39 years",
+        "F": "40-49 years",
+        "G": "50-59 years",
+        "H": "60-69 years",
+        "I": "Over 70 years"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/e535f8adcc148436f3b9a08fb3a281fc.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the age of the person in the image.\nA. 0-2 years\nB. 3-9 years\nC. 10-19 years\nD. 20-29 years\nE. 30-39 years\nF. 40-49 years\nG. 50-59 years\nH. 60-69 years\nI. Over 70 years\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "F",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "F",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.6730082035064697,
+        "request_datetime": 1764545596
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/6dd3eaa002d10a8f5c5e30057894d747.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the age of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0-2 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "3-9 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "10-19 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "20-29 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "30-39 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "40-49 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "50-59 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "60-69 years"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Over 70 years"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id2946"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "0-2 years",
+        "B": "3-9 years",
+        "C": "10-19 years",
+        "D": "20-29 years",
+        "E": "30-39 years",
+        "F": "40-49 years",
+        "G": "50-59 years",
+        "H": "60-69 years",
+        "I": "Over 70 years"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/6dd3eaa002d10a8f5c5e30057894d747.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the age of the person in the image.\nA. 0-2 years\nB. 3-9 years\nC. 10-19 years\nD. 20-29 years\nE. 30-39 years\nF. 40-49 years\nG. 50-59 years\nH. 60-69 years\nI. Over 70 years\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "H",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "H",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.4460573196411133,
+        "request_datetime": 1764545597
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "",
+          "multimedia_content": {
+            "media_objects": [
+              {
+                "content_type": "image/jpeg",
+                "location": "benchmark_output/scenarios/fair_face/736fdebc6fd637e62ca82d4ee0a3a405.jpg"
+              },
+              {
+                "content_type": "text/plain",
+                "text": "Identify the age of the person in the image."
+              }
+            ]
+          }
+        },
+        "references": [
+          {
+            "output": {
+              "text": "0-2 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "3-9 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "10-19 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "20-29 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "30-39 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "40-49 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "50-59 years"
+            },
+            "tags": []
+          },
+          {
+            "output": {
+              "text": "60-69 years"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Over 70 years"
+            },
+            "tags": []
+          }
+        ],
+        "split": "valid",
+        "id": "id2935"
+      },
+      "train_trial_index": 0,
+      "output_mapping": {
+        "A": "0-2 years",
+        "B": "3-9 years",
+        "C": "10-19 years",
+        "D": "20-29 years",
+        "E": "30-39 years",
+        "F": "40-49 years",
+        "G": "50-59 years",
+        "H": "60-69 years",
+        "I": "Over 70 years"
+      },
+      "request": {
+        "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-10",
+        "model": "custom/qwen2.5-vl-3b-instruct-ft-10",
+        "embedding": false,
+        "prompt": "",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 1,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "multimodal_prompt": {
+          "media_objects": [
+            {
+              "content_type": "text/plain",
+              "text": "Answer the multiple choice question by just giving the letter of the correct answer."
+            },
+            {
+              "content_type": "text/plain",
+              "text": "\n"
+            },
+            {
+              "content_type": "image/jpeg",
+              "location": "benchmark_output/scenarios/fair_face/736fdebc6fd637e62ca82d4ee0a3a405.jpg"
+            },
+            {
+              "content_type": "text/plain",
+              "text": "Identify the age of the person in the image.\nA. 0-2 years\nB. 3-9 years\nC. 10-19 years\nD. 20-29 years\nE. 30-39 years\nF. 40-49 years\nG. 50-59 years\nH. 60-69 years\nI. Over 70 years\nAnswer:"
+            }
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "H",
+            "logprob": 0,
+            "tokens": [
+              {
+                "text": "H",
+                "logprob": 0
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 0.30140185356140137,
+        "request_datetime": 1764545597
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    }
+  ]
+}

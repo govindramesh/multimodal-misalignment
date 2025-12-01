@@ -1,0 +1,784 @@
+[
+  {
+    "instance_id": "id649179",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000518249.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "Where is the horse?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id649179",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000518249.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "Where is da horse?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id638077",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000511050.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What is the animal here?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id638077",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000511050.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What is da animal heaa?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id606808",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000097264.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What color is the plate?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id606808",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000097264.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What color is da plate?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id540004",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000577912.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What room is this?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id540004",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000577912.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What room is dis?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id582499",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000474600.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "Is this a zoo?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id582499",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000474600.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "Is dis a zoo?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id601197",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000093852.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "Are those all laptops?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id601197",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000093852.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "Are those alll laptops?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id521581",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000305437.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What is the woman touching?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id521581",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000305437.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What is da woman touchin?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id513948",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000563381.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "What kind of animal is shown?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id635879",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000172315.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "How many bags?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id601104",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000224861.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "Where is the cat?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "instance_id": "id601104",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/qwen2.5-vl-3b-instruct-ft-05",
+      "model": "custom/qwen2.5-vl-3b-instruct-ft-05",
+      "embedding": false,
+      "prompt": "",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "multimodal_prompt": {
+        "media_objects": [
+          {
+            "content_type": "text/plain",
+            "text": "Answer the question using a single word or phrase. When the question asks \"How many...\", respond with just a number (e.g., 3) and not the word corresponding to the number."
+          },
+          {
+            "content_type": "text/plain",
+            "text": "\n"
+          },
+          {
+            "content_type": "image/jpeg",
+            "location": "benchmark_output/scenarios/vqa/valid/images/COCO_val2014_000000224861.jpg"
+          },
+          {
+            "content_type": "text/plain",
+            "text": "Where is da cat?"
+          }
+        ]
+      }
+    }
+  }
+]
