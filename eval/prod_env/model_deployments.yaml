@@ -27,7 +27,7 @@ model_deployments:
     tokenizer_name: qwen2.5-vl-3b-instruct-ft-10
     max_sequence_length: 32768
     client_spec:
-      class_name: "helm.clients.vision_language.huggingface_vlm_client.HuggingFaceVLMClient"
+      class_name: "helm.clients.vision_language.qwen2_vlm_client.Qwen2VLMClient"
       args:
         pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft-10"
         trust_remote_code: true
@@ -37,7 +37,7 @@ model_deployments:
     tokenizer_name: qwen2.5-vl-3b-instruct-ft-25
     max_sequence_length: 32768
     client_spec:
-      class_name: "helm.clients.vision_language.huggingface_vlm_client.HuggingFaceVLMClient"
+      class_name: "helm.clients.vision_language.qwen2_vlm_client.Qwen2VLMClient"
       args:
         pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft-25"
         trust_remote_code: true
@@ -47,9 +47,19 @@ model_deployments:
     tokenizer_name: qwen2.5-vl-3b-instruct-ft-50
     max_sequence_length: 32768
     client_spec:
-      class_name: "helm.clients.vision_language.huggingface_vlm_client.HuggingFaceVLMClient"
+      class_name: "helm.clients.vision_language.qwen2_vlm_client.Qwen2VLMClient"
       args:
         pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft-50"
+        trust_remote_code: true
+        device_map: auto
+  - name: huggingface/qwen2.5-vl-3b-instruct-ft-100
+    model_name: custom/qwen2.5-vl-3b-instruct-ft-100
+    tokenizer_name: qwen2.5-vl-3b-instruct-ft-50
+    max_sequence_length: 32768
+    client_spec:
+      class_name: "helm.clients.vision_language.qwen2_vlm_client.Qwen2VLMClient"
+      args:
+        pretrained_model_name_or_path: "../train/local_models/qwen2.5-vl-3b-instruct-ft-100"
         trust_remote_code: true
         device_map: auto
 

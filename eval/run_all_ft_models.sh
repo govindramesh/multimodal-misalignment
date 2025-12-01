@@ -7,9 +7,10 @@ MAX=3
 MODELS=(
   # "custom/qwen2.5-vl-3b-instruct-local"       # pulling from web
   # "custom/qwen2.5-vl-3b-instruct-ft-05"
-  "custom/qwen2.5-vl-3b-instruct-ft-10"
-  # "custom/qwen2.5-vl-3b-instruct-ft-25"
-  # "custom/qwen2.5-vl-3b-instruct-ft-50"
+  # "custom/qwen2.5-vl-3b-instruct-ft-10"
+  "custom/qwen2.5-vl-3b-instruct-ft-25"
+  "custom/qwen2.5-vl-3b-instruct-ft-50"
+  "custom/qwen2.5-vl-3b-instruct-ft-100"
 )
 
 for MODEL in "${MODELS[@]}"; do
